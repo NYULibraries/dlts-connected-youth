@@ -1,7 +1,7 @@
 {
-  "name": "nyupress-epubs-site",
+  "name": "connectedyouth",
   "version": "1.0.0",
-  "description": "nyupress-epubs-site",
+  "description": "connectedyouth description",
   "main": "Gruntfile.js",
   "devDependencies": {
     "dateformat": "^1.0.11",

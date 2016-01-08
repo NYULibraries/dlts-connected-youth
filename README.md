@@ -1,4 +1,4 @@
-NYU Press ePubs
+NYU Press ePubs: Connected Youth
 ===================
 
 A site for viewing and displaying epub books.
