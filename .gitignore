@@ -1,2 +1,5 @@
 build/*
 *.html
+source/json/datasources/about.json
+
+source/json/datasources/*
