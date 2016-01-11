@@ -12,7 +12,7 @@ YUI().use(
       datasourceURL = body.getAttribute('data-discovery') + '/select?&wt=json&json.wrf=callback={callback}&hl=true&hl.fl=title,description,text&fl=title,description,author,identifier,coverHref,thumbHref&rows=2',
       searchString = '*:*',
       transactions = [],
-      pager = Y.one('ul.pure-paginator'),
+      pager = (Y.one('ul.pure-paginator') ? Y.one('ul.pure-paginator') : ""),
       fold = 200,
       source = Y.one('#list-template').getHTML(),
       template = Y.Handlebars.compile(source);
@@ -76,12 +76,12 @@ YUI().use(
 
     function onClick(e) {
       e.preventDefault();
-      onScroll();
+      //onScroll();
     }
 
     function onPaginatorAvailable() {
       if (this.get('region').top - fold < body.get('winHeight')) {
-        onScroll();
+       // onScroll();
       }
     }
 
@@ -124,32 +124,32 @@ YUI().use(
 
         body.removeClass('io-loading');
 
-        loadMoreButton.removeClass('pure-button-disabled');
+   //     loadMoreButton.removeClass('pure-button-disabled');
 
       } catch (e) {
         Y.log('error'); // leave here for now
       }
     }
 
-    Y.IdleTimer.subscribe('idle', onScroll);
+  //  Y.IdleTimer.subscribe('idle', onScroll);
 
     // be opportunistic
-    Y.IdleTimer.start(5000);
+  //  Y.IdleTimer.start(5000);
 
     // Plug ScrollInfo 
     body.plug(Y.Plugin.ScrollInfo, {
-      scrollMargin: fold
+ //     scrollMargin: fold
     });
 
     body.scrollInfo.on({
-      scroll: onScroll
+//      scroll: onScroll
     });
 
-    loadMoreButton.on('click', onClick);
+   // loadMoreButton.on('click', onClick);
 
-    body.delegate('submit', onSubmit, 'form');
+  //  body.delegate('submit', onSubmit, 'form');
 
-    pager.on('available', onPaginatorAvailable);
+ //   pager.on('available', onPaginatorAvailable);
 
     // make the first request
     Y.jsonp(datasourceURL, {
