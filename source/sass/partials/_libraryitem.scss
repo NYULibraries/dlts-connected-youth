@@ -1,0 +1,85 @@
+.library-items {
+  margin-top: 10px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.library-item {
+  // when there are more books, change this back to 400;
+  -webkit-flex: 1 0 451px;
+  flex: 1 0 451px;
+  height: auto;
+  // display: table-row;
+  vertical-align: top;
+  float: none;
+  clear: both;
+  padding: 0;
+  @media screen and (min-width: 800px) {}
+  .book-title, .author {
+    white-space: normal;
+  }
+  .item-link {
+    display: block;
+  }
+  .img_hold {
+    // display: table-cell;
+    vertical-align: top;
+    width: 30%;
+    padding: 0px 10px 10px 0;
+    float: left;
+    max-width: 180px;
+  }
+  .book-info {
+    margin: 0px;
+    /*  max-height: 290px;*/
+    height: auto;
+    position: static;
+    vertical-align: top;
+    padding: 0 20px 20px 0;
+    // display: table-cell;
+    float: none;
+    width: auto;
+    overflow: hidden;
+  }
+  img {
+    margin: 0px;
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .buttons {
+    // float: right;
+    // position: static;
+    width: auto;
+    padding-top: 20px;
+    margin-top: 0;
+  }
+  .book-title {
+    font-weight: 400;
+    font-size: 21px;
+  }
+  a.details {
+    margin-right: 30px;
+    margin-top: 0;
+  }
+  .buttons a.btn {
+    display: inline-block;
+  }
+  .author {
+    margin-top: 0px;
+    padding: 5px 0;
+    line-height: 1.25;
+    font-size: 16px;
+    color: #555;
+    /* #6FA64D*/
+  }
+  .description {
+    font: normal 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+  }
+}

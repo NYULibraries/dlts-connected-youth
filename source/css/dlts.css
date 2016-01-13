@@ -1,12 +1,20 @@
 /*
  * Custom Skin for NYU Press Open Access Books site
  */
+
 body {
   padding: 0;
   min-width: 300px;
+  background-color: #ececec;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -18,10 +26,13 @@ h1, h2, h3, h4, h5, h6 {
   position: static;
   max-width: 800px;
   padding: 0 10px;
+  background-color: white;
 }
 
-a:link, a:visited {
-  color: #6FA64D;
+a:link,
+a:visited {
+  color: #57068c;
+  /* font-weight: bold;*/
 }
 
 body.io-loading {
@@ -55,16 +66,19 @@ a.btn {
 }
 
 /* overriding bootstrap */
+
 .breadcrumb {
-  background-color: #F5F5F5;
+  background-color: #ffffff;
   border-radius: 0px;
   list-style: none outside none;
-  margin-bottom: 20px;
+  margin: 0 auto;
   padding: 8px 15px 6px;
   border-bottom: 1px solid #dedede;
+  max-width: 1100px;
 }
 
-.data-container h2.page-title a:link, .data-container h2.page-title a:visited {
+.data-container h2.page-title a:link,
+.data-container h2.page-title a:visited {
   color: #888888;
 }
 
@@ -89,9 +103,26 @@ a.btn {
 .data-container {
   width: auto;
   position: static;
-  padding: 0 10px;
-  margin: 30px auto 70px;
-  max-width: 650px;
+  /* padding: 15px;
+   margin: 30px auto 70px;*/
+  padding: 35px;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.home .data-container {
+  /*display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;*/
+  /* background-color: aliceblue;*/
+  max-width: 1100px;
+}
+
+.home .data-container > div {
+  /* -webkit-flex: 1 1 auto;
+   flex: 1 1 auto;*/
 }
 
 .data-container h2.page-title {
@@ -102,7 +133,7 @@ a.btn {
   font-size: 19px;
   line-height: 1.4;
   /* Gotham  Screen Smart Light = font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';  */
-  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';
+  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-weight: 300;
   clear: both;
@@ -116,17 +147,23 @@ a.btn {
 
 .home .data-container .intro {
   /* Gotham  Screen Smart Light = font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';  */
-  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';
+  /* font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';*/
   font-weight: 300;
   font-style: normal;
+  max-width: 900px;
+}
+
+.home .data-container .show-books {
+  max-width: 900px;
 }
 
 .home .data-container p:first-child {
-  font-size: 1.1em;
-  margin: 35px 0 10px;
+  font-size: 1.3em;
+  /* margin: 35px 0 10px;*/
 }
 
-.data-container h2.page-title a:link, .data-container h2.page-title a:visited {
+.data-container h2.page-title a:link,
+.data-container h2.page-title a:visited {
   color: #888888;
 }
 
@@ -170,11 +207,13 @@ footer#pagefooter li.social > span > span {
   width: 16px;
 }
 
-footer#pagefooter li, footer#pagefooter li a:link, footer#pagefooter li a:visited {
+footer#pagefooter li,
+footer#pagefooter li a:link,
+footer#pagefooter li a:visited {
   color: #efefef;
   font-size: 13px;
   /* Gotham  Light = 'Gotham 3r', 'Gotham A', 'Gotham B' */
-  font-family: 'Gotham 3r', 'Gotham A', 'Gotham B', 'Helvetica Neue', sans-serif;
+  font-family: 'Gotham 3r', 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-weight: 300;
 }
@@ -188,17 +227,17 @@ footer#pagefooter li a:hover {
   color: white;
   text-align: center;
   margin-top: 10px;
-  background-color: #2c2c2c;
-  background-image: -moz-linear-gradient(top, #333333, #222222);
-  background-image: -ms-linear-gradient(top, #333333, #222222);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
-  background-image: -webkit-linear-gradient(top, #333333, #222222);
-  background-image: -o-linear-gradient(top, #333333, #222222);
-  background-image: linear, top, #333333, #222222;
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie-hex-str(#333333)', endColorstr='ie-hex-str(#222222)', GradientType=0);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  background-color: #260071;
+  /*  background-image: -moz-linear-gradient(top, #333333, #222222);
+    background-image: -ms-linear-gradient(top, #333333, #222222);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+    background-image: -webkit-linear-gradient(top, #333333, #222222);
+    background-image: -o-linear-gradient(top, #333333, #222222);
+    background-image: linear, top, #333333, #222222;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie-hex-str(#333333)', endColorstr='ie-hex-str(#222222)', GradientType=0);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);*/
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -216,7 +255,8 @@ a.info-icon {
   margin-top: 10px;
 }
 
-.library-items .book-title, .library-items .author {
+.library-items .book-title,
+.library-items .author {
   white-space: normal;
 }
 
@@ -229,14 +269,10 @@ a.info-icon {
   padding: 0;
 }
 
-.library-item:nth-child(odd) {
-  background: #f6f6f6;
-}
-
 .img_hold {
   display: table-cell;
   vertical-align: top;
-  width: 110px;
+  width: 160px;
   padding: 10px 10px 10px 0;
 }
 
@@ -250,12 +286,13 @@ a.info-icon {
 }
 
 .detail-item {
-  margin-top: 3rem;
+  /*  */
   height: auto;
+  max-width: 900px;
 }
 
 .detail-item .book-title {
-  font-size: 20px;
+  font-size: 3rem;
   line-height: 1.2;
   padding-bottom: 8px;
 }
@@ -289,11 +326,11 @@ a.info-icon {
 }
 
 .buttons .btn-default:hover {
-  background-color: #999;
+  background-color: #57068c;
   color: #fff;
-  text-shadow: 0px 0 3px black;
-  border-color: #999;
-  box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.3);
+  /* text-shadow: 0px 0 3px black;*/
+  border-color: #57068c;
+  /* box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.3);*/
 }
 
 .detail-item .book-info .social {
@@ -348,6 +385,7 @@ a.info-icon {
     padding: 0px 10px;
     -webkit-overflow-scrolling: touch;
 }*/
+
 .library-item .buttons {
   float: right;
   position: static;
@@ -356,9 +394,8 @@ a.info-icon {
 }
 
 .library-item .book-info .book-title {
-  font-weight: 300;
-  font-size: 20px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 21px;
 }
 
 .library-item a.details {
@@ -399,10 +436,11 @@ a.info-icon {
   display: block;
 }
 
-.item-link:hover, .item-link:hover .description {
+/*.item-link:hover,
+.item-link:hover .description {
   text-decoration: none;
   color: #333;
-}
+}*/
 
 .item-link:hover .book-title {
   text-decoration: underline;
@@ -410,6 +448,7 @@ a.info-icon {
 
 /* Sticky footer styles  http://getbootstrap.com/examples/sticky-footer/sticky-footer.css
 -------------------------------------------------- */
+
 html {
   position: relative;
   min-height: 100%;
@@ -432,38 +471,7 @@ body.page footer#pagefooter {
 
 /*  ------------------------------------------------------------------------- */
 
-.navbar {
-  min-height: 55px;
-  position: relative;
-  border: none;
-  border-radius: 0px;
-  margin-bottom: 20px;
-  margin-bottom: 0px;
-  background-color: #2c2c2c;
-  background-image: -moz-linear-gradient(top, #333333, #222222);
-  background-image: -ms-linear-gradient(top, #333333, #222222);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
-  background-image: -webkit-linear-gradient(top, #333333, #222222);
-  background-image: -o-linear-gradient(top, #333333, #222222);
-  background-image: linear, top, #333333, #222222;
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie-hex-str(#333333)', endColorstr='ie-hex-str(#222222)', GradientType=0);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.navbar-inner {
-  height: auto;
-}
-
-.home .navbar li {
-  margin: 0;
-}
-
-/*  Navigation */
-
-/*  ------------------------------------------------------------------------- */
+.header {}
 
 .navbar {
   min-height: 55px;
@@ -472,22 +480,25 @@ body.page footer#pagefooter {
   border-radius: 0px;
   margin-bottom: 20px;
   margin-bottom: 0px;
-  background-color: #2c2c2c;
-  background-image: -moz-linear-gradient(top, #333333, #222222);
-  background-image: -ms-linear-gradient(top, #333333, #222222);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
-  background-image: -webkit-linear-gradient(top, #333333, #222222);
-  background-image: -o-linear-gradient(top, #333333, #222222);
-  background-image: linear, top, #333333, #222222;
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie-hex-str(#333333)', endColorstr='ie-hex-str(#222222)', GradientType=0);
+  /* background: linear-gradient(rgba(53, 94, 156, 0.6), rgba(53, 94, 156, 0.4)), url(../images/shattered.png);*/
+  /*  background-image: -moz-linear-gradient(top, #333333, #222222);
+    background-image: -ms-linear-gradient(top, #333333, #222222);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+    background-image: -webkit-linear-gradient(top, #333333, #222222);
+    background-image: -o-linear-gradient(top, #333333, #222222);
+    background-image: linear, top, #333333, #222222;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie-hex-str(#333333)', endColorstr='ie-hex-str(#222222)', GradientType=0);*/
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  background-color: #3701A3;
 }
 
 .navbar-inner {
   height: auto;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .home .navbar li {
@@ -503,27 +514,28 @@ body.page footer#pagefooter {
 }
 
 .navbar #logo-replace a {
-  width: 105px;
+  width: 180px;
   height: 50px;
   display: block;
   text-indent: 300%;
-  background-image: url("../images/nyuPressCent.png");
+  background-image: url("../images/nyucent.svg");
   background-repeat: no-repeat;
   background-size: auto 100%;
   white-space: nowrap;
+  padding-right: 20px;
 }
 
 .navbar #logo-replace {
   height: 50px;
-  width: 105px;
+  width: 125px;
   overflow: hidden;
   margin: 0;
 }
 
 .navbar #site-title {
   /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-  font: normal 200 22px / 1 'Gotham 2r', 'Gotham A', 'Gotham B', arial;
-  letter-spacing: .5px;
+  font: normal 200 27px / 1 'Gotham 2r', 'Gotham A', 'Gotham B', "Helvetica", Arial;
+  /* letter-spacing: .5px;*/
   text-transform: uppercase;
   color: white;
   text-decoration: none;
@@ -545,11 +557,13 @@ body.page footer#pagefooter {
   float: right;
 }
 
-.navbar a:link, .navbar a:visited {
+.navbar a:link,
+.navbar a:visited {
   color: white;
 }
 
-.navbar a:focus, .navbar a:hover {
+.navbar a:focus,
+.navbar a:hover {
   text-decoration: underline;
 }
 
@@ -557,6 +571,7 @@ body.page footer#pagefooter {
     margin-bottom: 0;
 }
 */
+
 .navbar .container {
   display: table;
   width: 100%;
@@ -564,6 +579,7 @@ body.page footer#pagefooter {
   margin-right: 0;
   padding-left: 0px;
   padding-right: 0px;
+  background-color: rgba(66, 0, 197, 0.51);
 }
 
 .navbar header {
@@ -571,7 +587,7 @@ body.page footer#pagefooter {
 }
 
 .navbar header > * {
-  padding: 5px 0 5px 10px;
+  padding: 20px 0 20px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -632,7 +648,7 @@ a#s-btn img {
 .searchform {
   margin: 0;
   /* Gotham  Screen Smart Light = font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';  */
-  font: normal 300 12px / 1 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';
+  font: normal 300 12px / 1 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
 }
 
 input.searchbox {
@@ -640,9 +656,9 @@ input.searchbox {
   font-size: 13px;
   color: white;
   padding: 10px 10px 5px 10px;
-  background: #343434 url("../images/s4.png") no-repeat right center;
+  background: #260071 url("../images/s4.png") no-repeat right center;
   background-size: 26px;
-  border: 1px solid #666;
+  border: 1px solid #1B0265;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -673,20 +689,24 @@ input.searchbox:focus {
   .home .navbar #site-title {
     /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
     font: normal 200 27px / 1 'Gotham 2r', 'Gotham A', 'Gotham B', Helvetica;
-    padding-bottom: 8px;
+    padding-bottom: 54px;
   }
-  .home .navbar #logo-replace, .home .navbar #logo-replace a {
+  .home .navbar #logo-replace,
+  .home .navbar #logo-replace a {
     height: 75px;
     width: 250px;
+    padding: 20px;
   }
   .home .navbar header > * {
-    display: table-cell;
-    vertical-align: bottom;
+    /* display: table-cell;
+     vertical-align: bottom;*/
   }
 }
 
+.navbar header > * {}
+
 .navbar header > * {
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 10px 0px;
 }
 
 @media screen and (max-width: 500px) {
@@ -702,12 +722,14 @@ input.searchbox:focus {
   h2.page-title {
     margin: 0px;
   }
-  footer#pagefooter li a:link, footer#pagefooter li a:visited {
+  footer#pagefooter li a:link,
+  footer#pagefooter li a:visited {
     margin-bottom: 1rem;
     margin: 0px;
     /* padding: 11px 10px 7px;*/
   }
-  footer#pagefooter li#dlts-link a:link, footer#pagefooter li#dlts-link a:visited {
+  footer#pagefooter li#dlts-link a:link,
+  footer#pagefooter li#dlts-link a:visited {
     padding-left: 0;
   }
   footer#pagefooter li#dlts-link > span {
@@ -730,7 +752,9 @@ input.searchbox:focus {
   .navbar .reader .icon-full-screen {
     display: none;
   }
-  .navbar .reader #logo-replace, .home .navbar #logo-replace, .navbar #logo-replace {
+  .navbar .reader #logo-replace,
+  .home .navbar #logo-replace,
+  .navbar #logo-replace {
     height: 40px;
     width: 40px;
   }
@@ -747,7 +771,9 @@ input.searchbox:focus {
     font: normal 200 16px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B';
     /* max-width: 15rem;*/
   }
-  .home .navbar #site-title, .page .navbar #site-title, .navbar #site-title {
+  .home .navbar #site-title,
+  .page .navbar #site-title,
+  .navbar #site-title {
     /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
     font: normal 200 18px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B';
     /* max-width: 15rem;*/
@@ -755,7 +781,10 @@ input.searchbox:focus {
   .navbar {
     padding: 10px 10px;
   }
-  .navbar .container, .navbar header, .navbar header > *, .navbar .n-utils,
+  .navbar .container,
+  .navbar header,
+  .navbar header > *,
+  .navbar .n-utils,
   .home .navbar header > * {
     display: block;
     padding: 0;
@@ -765,19 +794,22 @@ input.searchbox:focus {
     width: 100%;
     overflow: hidden;
   }
-  .navbar header h2, .navbar header h1 {
+  .navbar header h2,
+  .navbar header h1 {
     float: left;
   }
-  .navbar header h1, .home .navbar header h1 {
+  .navbar header h1,
+  .home .navbar header h1 {
     padding: 10px 0px 0px 10px;
   }
   .navbar header .n-utils {
     float: none;
   }
-  #search-toggle, #search-toggle[style] {
+  #search-toggle,
+  #search-toggle[style] {
     border: none;
     color: #888;
-    font: normal  12px / 1 arial;
+    font: normal 12px / 1 arial;
     padding: 10px;
     display: block !important;
     float: right;
@@ -820,7 +852,10 @@ input.searchbox:focus {
 }
 
 @media screen and (max-width: 350px) {
-  .home .navbar #site-title, .page .navbar #site-title, .navbar .reader #site-title, .navbar #site-title {
+  .home .navbar #site-title,
+  .page .navbar #site-title,
+  .navbar .reader #site-title,
+  .navbar #site-title {
     /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
     font: normal 200 14px/1.1 'Gotham 2r', 'Gotham A', 'Gotham B';
   }

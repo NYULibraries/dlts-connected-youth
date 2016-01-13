@@ -1,0 +1,445 @@
+/*
+ * Custom Skin for NYU Press Open Access Books site
+ */
+$sans-fonts: Helvetica, Arial, sans-serif;
+$darkblue: #3701A3;
+
+@import "partials/_header";
+@import "partials/_searchbox";
+@import "partials/_libraryitem";
+@import "partials/_detailitem";
+
+body {
+  padding: 0;
+  min-width: 300px;
+  background-color: #ececec;
+  font-family: $sans-fonts;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a:link,
+a:visited {
+  color: $darkblue;
+}
+
+body.io-loading {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../images/loading.gif);
+}
+
+/*a[target="_blank"] {
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-image: url(../images/ext_link_icon.svg);
+    padding-right: 13px;
+}*/
+
+a.btn {
+  color: #333;
+}
+
+#aboutlink {
+  padding-right: 25px;
+  height: 28px;
+  display: block;
+  background: url(../images/oa_logo_sprite.png) no-repeat right top;
+  vertical-align: bottom;
+  padding-top: 14px;
+}
+
+#aboutlink:hover {
+  background: url(../images/oa_logo_sprite.png) no-repeat right bottom;
+}
+
+/* overriding bootstrap */
+
+.breadcrumb {
+  background-color: #ffffff;
+  border-radius: 0px;
+  list-style: none outside none;
+  margin: 0 auto;
+  padding: 8px 15px 6px;
+  border-bottom: 1px solid #dedede;
+  max-width: 1100px;
+}
+
+.page-title {
+  margin-bottom: 1rem;
+}
+
+.sorter {
+  text-align: right;
+}
+
+.sorter span {
+  font-weight: bold;
+}
+
+.sorter a {
+  color: #333;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.home {
+  .data-container {
+    /*display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;*/
+    /* background-color: aliceblue;*/
+    max-width: 1100px;
+  }
+  .data-container h2.page-title {
+    font-size: 17px;
+    margin: 50px 0 20px;
+  }
+  .data-container .intro {
+    /* Gotham  Screen Smart Light = font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';  */
+    /* font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';*/
+    font-weight: 300;
+    font-style: normal;
+    max-width: 900px;
+  }
+  .data-container .show-books {
+    max-width: 900px;
+  }
+  .data-container p:first-child {
+    font-size: 1.3em;
+    /* margin: 35px 0 10px;*/
+  }
+}
+
+.data-container {
+  margin: 0 auto;
+  width: auto;
+  position: static;
+  max-width: 800px;
+  padding: 0 10px;
+  background-color: white;
+  /* padding: 15px;
+   margin: 30px auto 70px;*/
+  padding: 35px;
+  padding: 35px 20px 35px 35px;
+  max-width: 1100px;
+  h2.page-title {
+    padding: 0px 0;
+    text-transform: uppercase;
+    color: #333;
+    margin: 0 0 10px;
+    font-size: 19px;
+    line-height: 1.4;
+    /* Gotham  Screen Smart Light = font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';  */
+    font-family: "Gotham SSm 3r", "Gotham SSm A", "Gotham SSm B", $sans-fonts;
+    font-weight: normal;
+    font-weight: 300;
+    clear: both;
+    float: none;
+  }
+  h2.page-title a:link,
+  h2.page-title a:visited {
+    color: #888888;
+  }
+}
+
+footer#pagefooter {
+  width: 100%;
+}
+
+.list-view footer#pagefooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+}
+
+footer#pagefooter ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer#pagefooter li {
+  display: inline-block;
+  padding: 0 5px 0 0;
+  color: white;
+}
+
+footer#pagefooter li + li:before {
+  content: "|";
+  color: #999;
+}
+
+footer#pagefooter li > span {
+  padding: 0 0 0 10px;
+  display: inline-block;
+}
+
+footer#pagefooter li.social > span > span {
+  padding: auto;
+  width: 16px;
+}
+
+footer#pagefooter li,
+footer#pagefooter li a:link,
+footer#pagefooter li a:visited {
+  color: #efefef;
+  font-size: 13px;
+  /* Gotham  Light = 'Gotham 3r', 'Gotham A', 'Gotham B' */
+  font-family: 'Gotham 3r', 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-weight: 300;
+}
+
+footer#pagefooter li a:hover {
+  color: white;
+}
+
+.footer-inner {
+  padding: 5px 0 7px 0;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #260071;
+  /*  background-image: -moz-linear-gradient(top, #333333, #222222);
+    background-image: -ms-linear-gradient(top, #333333, #222222);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+    background-image: -webkit-linear-gradient(top, #333333, #222222);
+    background-image: -o-linear-gradient(top, #333333, #222222);
+    background-image: linear, top, #333333, #222222;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie-hex-str(#333333)', endColorstr='ie-hex-str(#222222)', GradientType=0);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+a.info-icon {
+  display: none;
+}
+
+.book-item .cover-image {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.buttons .btn-default {
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.buttons .btn-default:hover {
+  background-color: #57068c;
+  color: #fff;
+  /* text-shadow: 0px 0 3px black;*/
+  border-color: #57068c;
+  /* box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.3);*/
+}
+
+.no-cover-nyup {
+  background-color: #61777D;
+}
+
+/*#app-container {
+    padding: 0px 10px;
+    -webkit-overflow-scrolling: touch;
+}*/
+
+/*.item-link:hover,
+.item-link:hover .description {
+  text-decoration: none;
+  color: #333;
+}*/
+
+.item-link:hover .book-title {
+  text-decoration: underline;
+}
+
+/* Sticky footer styles  http://getbootstrap.com/examples/sticky-footer/sticky-footer.css
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body.page {
+  /* Margin bottom by footer height */
+  margin-bottom: 42px;
+}
+
+body.page footer#pagefooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 42px;
+}
+
+/*  Navigation */
+
+/*  ------------------------------------------------------------------------- */
+
+.more-books a {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  footer#pagefooter li#dlts-link:before {
+    content: "";
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .library-items {
+    margin: 1rem 0px 0px;
+  }
+  h2.page-title {
+    margin: 0px;
+  }
+  footer#pagefooter li a:link,
+  footer#pagefooter li a:visited {
+    margin-bottom: 1rem;
+    margin: 0px;
+    /* padding: 11px 10px 7px;*/
+  }
+  footer#pagefooter li#dlts-link a:link,
+  footer#pagefooter li#dlts-link a:visited {
+    padding-left: 0;
+  }
+  footer#pagefooter li#dlts-link > span {
+    /* padding-left: 20px;*/
+  }
+  .footer-inner {
+    padding: 2px 0 5px;
+  }
+  body.page {
+    /* Margin bottom by footer height */
+    margin-bottom: 57px;
+  }
+  body.page footer#pagefooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 57px;
+  }
+  .navbar .reader .icon-full-screen {
+    display: none;
+  }
+  .navbar .reader #logo-replace,
+  .home .navbar #logo-replace,
+  .navbar #logo-replace {
+    height: 40px;
+    width: 40px;
+  }
+  .navbar #logo-replace a {
+    height: 40px;
+    width: 40px;
+    background-position: right top;
+  }
+  .navbar header .n-utils {
+    vertical-align: bottom;
+  }
+  .navbar .reader #site-title {
+    /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
+    font: normal 200 16px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B';
+    /* max-width: 15rem;*/
+  }
+  .home .navbar #site-title,
+  .page .navbar #site-title,
+  .navbar #site-title {
+    /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
+    font: normal 200 18px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B';
+    /* max-width: 15rem;*/
+  }
+  .navbar {
+    padding: 10px 10px;
+  }
+  .navbar .container,
+  .navbar header,
+  .navbar header > *,
+  .navbar .n-utils,
+  .home .navbar header > * {
+    display: block;
+    padding: 0;
+  }
+  .navbar header {
+    /* clear floats */
+    width: 100%;
+    overflow: hidden;
+  }
+  .navbar header h2,
+  .navbar header h1 {
+    float: left;
+  }
+  .navbar header h1,
+  .home .navbar header h1 {
+    padding: 10px 0px 0px 10px;
+  }
+  .navbar header .n-utils {
+    float: none;
+  }
+  #search-toggle,
+  #search-toggle[style] {
+    border: none;
+    color: #888;
+    font: normal 12px / 1 arial;
+    padding: 10px;
+    display: block !important;
+    float: right;
+    opacity: .8;
+    width: 40px;
+    height: 40px;
+    background: transparent url("../images/s3.png") no-repeat center center;
+    background-size: 50%;
+    text-indent: -999em;
+  }
+  #search-toggle.open {
+    text-indent: 0;
+    background: none;
+  }
+  #search-toggle:focus {
+    outline: none;
+  }
+  #search-toggle::-moz-focus-inner {
+    border: 0;
+  }
+  .searchform {
+    display: none;
+  }
+  .searchform.open {
+    display: block;
+  }
+  .searchform input.searchbox {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+    /* 16px and up prevents autozoom in safari iOS */
+    font-size: 16px;
+  }
+  .buttons {
+    margin: 2em 0 0;
+  }
+  .buttons a {
+    margin: .5em 0;
+  }
+}
+
+.book iframe {
+  width: 100%;
+  border: none;
+}

@@ -1,0 +1,145 @@
+.navbar header > * {
+  padding: 10px 0 10px 0px;
+}
+
+.navbar-inner {
+  height: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.navbar {
+  min-height: 55px;
+  position: relative;
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  margin-bottom: 0px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  background-color: #3701A3;
+  #logo-replace {
+    padding-right: 20px;
+    overflow: hidden;
+    margin: 0;
+    a {
+      width: 180px;
+      height: 50px;
+      display: block;
+      text-indent: 300%;
+      background-image: url("../images/nyucent.svg");
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      white-space: nowrap;
+    }
+  }
+  #site-title {
+    /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
+    font: normal 200 27px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+  #site-title a {
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+  #site-title a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  a:link,
+  a:visited {
+    color: white;
+  }
+  a:focus,
+  a:hover {
+    text-decoration: underline;
+  }
+  .container {
+    // display: table;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: rgba(66, 0, 197, 0.51);
+  }
+  header {
+    // display: table-row;
+    display: table;
+  }
+  #logo-replace, .rhold {
+    display: table-cell;
+  }
+  header > * {
+    padding: 20px 0 20px;
+    // display: table-cell;
+    vertical-align: bottom;
+  }
+  .n-utils {
+    // display: table-cell;
+    // padding: 10px 10px 10px 0;
+    /* overriding bootstrap */
+    /*float: none !important;*/
+    // text-align: right;
+ 
+  }
+  .n-utils a {
+    // white-space: nowrap;
+    /*text-transform: uppercase;*/
+    /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
+    font: normal 200 13px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
+    color: #bbb;
+  }
+  .btn-default {
+    border: none;
+    background-color: transparent;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+    /* box-shadow: 1px 1px 5px rgb(0, 0, 0);*/
+  }
+  .icon:first-of-type {
+    margin-right: 5px;
+  }
+}
+
+.home .navbar {
+  li {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .home {
+    .navbar {
+      #site-title {
+        /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
+        font: normal 200 28px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
+        padding-bottom: 10px;
+      }
+      #logo-replace {
+        padding: 20px 35px;
+        a {
+          height: 75px;
+          width: 237px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .home .navbar #site-title,
+  .page .navbar #site-title,
+  .navbar .reader #site-title,
+  .navbar #site-title {
+    /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
+    font: normal 200 14px / 1.1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
+  }
+}
