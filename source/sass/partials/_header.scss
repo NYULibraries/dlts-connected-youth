@@ -1,5 +1,5 @@
 .navbar header > * {
-  padding: 10px 0 10px 0px;
+  //padding: 10px 0 10px 0px;
 }
 
 .navbar-inner {
@@ -20,12 +20,15 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   background-color: #3701A3;
   #logo-replace {
-    padding-right: 20px;
+    padding: 20px 20px 20px $widemargin;
+    @media screen and (min-width: 871px) {
+      padding: 20px $widemargin;
+    }
     overflow: hidden;
     margin: 0;
     a {
-      width: 180px;
-      height: 50px;
+      width: 190px;
+      height: 60px;
       display: block;
       text-indent: 300%;
       background-image: url("../images/nyucent.svg");
@@ -36,7 +39,19 @@
   }
   #site-title {
     /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-    font: normal 200 27px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
+    @media screen and (min-width: 871px) {
+      font: normal 200 27px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
+    }
+    @media screen and (max-width: 870px) {
+      font: normal 200 24px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
+    }
+    @media screen and (max-width: 800px) {
+      font: normal 200 20px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
+    }
+    @media screen and (max-width: 600px) {
+      font: normal 200 17px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
+    }
+    font: normal 200 17px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
@@ -65,7 +80,9 @@
     margin-right: 0;
     padding-left: 0px;
     padding-right: 0px;
-    background-color: rgba(66, 0, 197, 0.51);
+    @media screen and (min-width: 1100px) {
+      background-color: rgba(66, 0, 197, 0.51);
+    }
   }
   header {
     // display: table-row;
@@ -75,9 +92,12 @@
     display: table-cell;
   }
   header > * {
-    padding: 20px 0 20px;
-    // display: table-cell;
-    vertical-align: bottom;
+    padding: 0;
+    vertical-align: middle;
+    @media screen and (min-width: 800px) {
+      padding: 20px 0 20px;
+      vertical-align: bottom;
+    }
   }
   .n-utils {
     // display: table-cell;
@@ -108,22 +128,11 @@
   }
 }
 
-.home .navbar {
-  li {
-    margin: 0;
-  }
-}
-
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1001px) {
   .home {
     .navbar {
-      #site-title {
-        /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-        font: normal 200 28px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
-        padding-bottom: 10px;
-      }
       #logo-replace {
-        padding: 20px 35px;
+        padding: 20px $widemargin;
         a {
           height: 75px;
           width: 237px;
@@ -133,6 +142,62 @@
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: 10px 0px;
+    .reader .icon-full-screen {
+      display: none;
+    }
+    .reader #logo-replace,
+    .home & #logo-replace,
+    #logo-replace {
+      height: 40px;
+      width: 60px;
+      margin: 0 0px 0 0;
+      padding: 0;
+    }
+    #logo-replace a {
+      height: 40px;
+      width: 40px;
+      background-position: left top;
+      background-size: auto 192%;
+    }
+    header {
+      margin: 0 $narrowmargin;
+    }
+    .reader #site-title {
+      /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
+      font: normal 200 16px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B';
+      /* max-width: 15rem;*/
+    }
+    .n-utils {
+      float: none;
+      vertical-align: bottom;
+    }
+  }
+}
+
+// @media screen and (max-width: 850px) {
+//   .home {
+//     .navbar {
+//       #site-title {
+//         /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B'
+//         font: normal 200 20px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
+//         padding-bottom: 10px;
+//       }
+//       #logo-replace {
+//         padding: 20px 0;
+//         a {
+//           // height: 75px;
+//           // width: 237px;
+//           // display: block;
+
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media screen and (max-width: 350px) {
   .home .navbar #site-title,
