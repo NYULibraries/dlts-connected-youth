@@ -6,11 +6,15 @@ $darkblue: #3701A3;
 $widemargin: 35px;
 $narrowmargin: 20px;
 $margin-bk-min: 701px;
+$margin-bk-max: 700px;
 $sitewidth: 1100px;
 
+@import "compass/css3";
+@import "partials/_mixins";
+@import "partials/_libraryitem";
 @import "partials/_header";
 @import "partials/_searchbox";
-@import "partials/_libraryitem";
+
 @import "partials/_detailitem";
 @import "partials/_footer";
 
@@ -43,10 +47,6 @@ body.io-loading {
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url(../images/loading.gif);
-  background-color: red;
-  * {
-    background-color: blue;
-  }
 }
 
 /*a[target="_blank"] {
@@ -205,39 +205,12 @@ a.info-icon {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: $margin-bk-max) {
   .library-items {
     margin: 1rem 0px 0px;
   }
   h2.page-title {
     margin: 0px;
-  }
-  footer#pagefooter li a:link,
-  footer#pagefooter li a:visited {
-    margin-bottom: 1rem;
-    margin: 0px;
-    /* padding: 11px 10px 7px;*/
-  }
-  footer#pagefooter li#dlts-link a:link,
-  footer#pagefooter li#dlts-link a:visited {
-    padding-left: 0;
-  }
-  footer#pagefooter li#dlts-link > span {
-    /* padding-left: 20px;*/
-  }
-  .footer-inner {
-    padding: 2px 0 5px;
-  }
-  body.page {
-    /* Margin bottom by footer height */
-    margin-bottom: 57px;
-  }
-  body.page footer#pagefooter {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 57px;
   }
   #search-toggle,
   #search-toggle[style] {

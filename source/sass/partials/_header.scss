@@ -55,15 +55,26 @@
     text-transform: uppercase;
     color: white;
     text-decoration: none;
-  }
-  #site-title a {
-    display: block;
-    text-decoration: none;
-    color: white;
-  }
-  #site-title a:hover {
-    text-decoration: underline;
-    color: white;
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      display: block;
+      text-indent: 300%;
+      background-image: url("../images/cylogo2.svg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      white-space: nowrap;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: white;
+    }
+    img {
+      /* logo */
+      width: 100%;
+      height: auto;
+    }
   }
   a:link,
   a:visited {

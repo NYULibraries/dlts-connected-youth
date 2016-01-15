@@ -1,18 +1,17 @@
 .library-items {
   margin-top: 10px;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  /*    @include flexbox((display: flexbox, flex-flow: row wrap, flex-pack: justify), $version: 2); */
+  @include flexbox((display: flexbox, flex-flow: row wrap, flex-pack: justify), $version: 2);
+  /* @include flexbox((display: flex, flex-direction: row, flex-wrap: wrap)); */
+  @include flexbox((display: flex, flex-flow: row wrap, justify-content: space-between));
+  /***** */
 }
 
 .library-item {
   // when there are more books, change this back to 400;
-  -webkit-flex: 1 0 451px;
-  flex: 1 0 451px;
   height: auto;
-  // display: table-row;
+  @include flexbox((flex: 1 1 451px), $version: 2);
+  @include flex(1 1 451px);
   vertical-align: top;
   float: none;
   clear: both;
@@ -79,7 +78,7 @@
     /* #6FA64D*/
   }
   .description {
-    font: normal 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal 14px / 1.4 $sans-fonts;
     color: #333;
   }
 }

@@ -1,6 +1,8 @@
 # Require any additional compass plugins here.
 #require 'compass-pattern-primer'
 require 'compass'
+
+
 # require 'toolkit'
 require 'modular-scale'
 #require 'compass-normalize'
@@ -18,7 +20,7 @@ firesass = false
 
 
 # Location of the theme's resources.
-css_dir         = "../build/css"
+css_dir         = "css"
 sass_dir        = "sass"
 images_dir      = "image"
 javascripts_dir = "js"
