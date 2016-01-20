@@ -75,7 +75,7 @@ body.page footer#pagefooter {
   height: 32px;
 }
 
-@media screen and (max-width: $margin-bk-max) {
+@media screen and (max-width: 450px) {
   footer#pagefooter li a:link,
   footer#pagefooter li a:visited {
     margin-bottom: 1rem;
@@ -97,9 +97,6 @@ body.page footer#pagefooter {
     margin-bottom: 50px;
   }
   body.page footer#pagefooter {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     /* Set the fixed height of the footer here */
     height: 50px;
   }

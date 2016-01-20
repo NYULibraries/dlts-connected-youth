@@ -542,7 +542,7 @@ body.page footer#pagefooter {
   height: 32px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 450px) {
   /* line 79, ../sass/partials/_footer.scss */
   footer#pagefooter li a:link,
   footer#pagefooter li a:visited {
@@ -575,9 +575,6 @@ body.page footer#pagefooter {
 
   /* line 99, ../sass/partials/_footer.scss */
   body.page footer#pagefooter {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     /* Set the fixed height of the footer here */
     height: 50px;
   }
@@ -705,7 +702,7 @@ a.btn {
 
 /* line 104, ../sass/dlts.scss */
 .home .data-container {
-  padding: 20px 35px 70px;
+  padding-top: 20px;
 }
 /* line 106, ../sass/dlts.scss */
 .home .data-container h2.page-title {
@@ -897,9 +894,4 @@ a.info-icon {
   .buttons a {
     margin: .5em 0;
   }
-}
-/* line 264, ../sass/dlts.scss */
-.book iframe {
-  width: 100%;
-  border: none;
 }
