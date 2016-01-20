@@ -23,13 +23,17 @@
   .item-link {
     display: block;
   }
+  .item-link:hover .book-title {
+    // text-decoration: underline;
+ 
+  }
   .img_hold {
     // display: table-cell;
     vertical-align: top;
     width: 30%;
-    padding: 0px 10px 10px 0;
+    padding: 0px 15px 10px 0;
     float: left;
-    max-width: 180px;
+    max-width: 175px;
   }
   .book-info {
     margin: 0px;
@@ -55,12 +59,14 @@
     // float: right;
     // position: static;
     width: auto;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-top: 0;
+    text-align: right;
   }
   .book-title {
     font-weight: 400;
-    font-size: 21px;
+    font-size: 2rem;
+    line-height: 1.35;
   }
   a.details {
     margin-right: 30px;
@@ -71,10 +77,10 @@
   }
   .author {
     margin-top: 0px;
-    padding: 5px 0;
+    padding: 0px 0 5px;
     line-height: 1.25;
-    font-size: 16px;
-    color: #555;
+    // font-size: 16px;
+    // color: #555;
     /* #6FA64D*/
   }
   .description {

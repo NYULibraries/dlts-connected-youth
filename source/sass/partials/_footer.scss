@@ -26,7 +26,7 @@ footer#pagefooter {
     color: #efefef;
     font-size: 13px;
     /* Gotham  Light = 'Gotham 3r', 'Gotham A', 'Gotham B' */
-    font-family: "Gotham 3r", "Gotham A", "Gotham B", $sans-fonts;
+    font-family: $sans-fonts;
     font-weight: normal;
     font-weight: 300;
   }
@@ -48,6 +48,9 @@ footer#pagefooter {
   color: white;
   text-align: center;
   background-color: $darkblue;
+  background-color: rgba(66, 0, 197, 0.9);
+  max-width: $sitewidth;
+  margin: 0 auto;
 }
 
 /* Sticky footer styles  http://getbootstrap.com/examples/sticky-footer/sticky-footer.css
@@ -56,6 +59,7 @@ footer#pagefooter {
 html {
   position: relative;
   min-height: 100%;
+  // height: 100%;
 }
 
 body.page {

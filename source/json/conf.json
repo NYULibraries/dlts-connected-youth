@@ -1,8 +1,8 @@
 {
   "appName": "Connected Youth and Digital Futures",
   "collectionCode": "nyupress-epubs-site",
-  "appUrl": "http://localhost/connectedyouth",
-  "appUrlx": "http://connectedyouth-dev.nyupress.org",
+  "appUrlx": "http://localhost/connectedyouth",
+  "appUrl": "http://connectedyouth-dev.nyupress.org",
   "appRoot": "/connectedyouth",
   "discovery": "http://discovery.dlib.nyu.edu:8080/solr3_discovery/nyupress",
   "EnableGoogleAnalytics": false,

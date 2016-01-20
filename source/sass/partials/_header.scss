@@ -49,14 +49,14 @@
       // color: white;
       width: 100%;
       height: 50px;
+      height: 21px;
       overflow: hidden;
       text-indent: -3000px;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 0px 0px;
       background-image: url("../images/cylogo2.svg");
-      // background-color: red;
-   
+      font-size: 10px;
     }
     a:hover {
       text-decoration: underline;
@@ -85,15 +85,14 @@
   header {
     display: table;
     width: 95%;
-    margin-right: 5%;
+    max-width: 935px;
   }
   #logo-replace, .rhold {
     display: table-cell;
   }
   header > * {
     padding: 0;
-    vertical-align: middle;
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 700px) {
       padding: 20px 0 20px;
       vertical-align: bottom;
     }
@@ -128,18 +127,25 @@
 }
 
 @media screen and (min-width: 1001px) {
-  .home {
-    .navbar {
-      #logo-replace {
-        padding: 20px $widemargin;
-        a {
-          height: 75px;
-          width: 237px;
-          display: block;
-        }
+  // .home {
+  .navbar {
+    #logo-replace {
+      padding: 20px $widemargin;
+      a {
+        width: 237px;
+        height: 75px;
+        display: block;
       }
     }
+    #site-title a {
+      height: 26px;
+    }
+    // .rhold {
+    //   vertical-align: bottom;
+    // }
+ 
   }
+  // }
 }
 
 @media screen and (max-width: 700px) {
@@ -180,6 +186,24 @@
   }
 }
 
+@media screen and (max-width: 900px) and (min-width: 701px) {
+  // .navbar #site-title a {
+  //   background-image: url("../images/cylogo_vertical.svg");
+  // }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    #site-title a {
+      height: 40px;
+      background-image: url("../images/cylogo_vertical.svg");
+    }
+    .rhold {
+      vertical-align: middle;
+    }
+  }
+}
+
 // @media screen and (max-width: 850px) {
 //   .home {
 //     .navbar {
@@ -207,6 +231,6 @@
   .navbar .reader #site-title,
   .navbar #site-title {
     /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-    font: normal 200 14px / 1.1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
+    font: normal 200 14px / 1.1 $sans-fonts;
   }
 }

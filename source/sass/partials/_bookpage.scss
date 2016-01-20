@@ -1,0 +1,22 @@
+.book {
+  iframe {
+    width: 100%;
+    border: none;
+  }
+  .navbar {
+    #site-title a {
+      height: 15px;
+    }
+    #logo-replace {
+      padding: 10px 10px 10px 10px;
+      width: 213px;
+      a {
+        height: 50px;
+        width: 158px;
+      }
+    }
+    .navbar-inner {
+      max-width: none;
+    }
+  }
+}

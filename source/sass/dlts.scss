@@ -14,9 +14,9 @@ $sitewidth: 1100px;
 @import "partials/_libraryitem";
 @import "partials/_header";
 @import "partials/_searchbox";
-
 @import "partials/_detailitem";
 @import "partials/_footer";
+@import "partials/_bookpage";
 
 body {
   padding: 0;
@@ -102,9 +102,12 @@ a.btn {
 
 .home {
   .data-container {
+    padding: 20px $widemargin 70px;
     h2.page-title {
       font-size: 17px;
-      margin: 50px 0 20px;
+      margin: 30px 0 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba($darkblue, 0.2);
     }
     .intro {
       /* Gotham  Screen Smart Light = font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';  */
@@ -124,15 +127,19 @@ a.btn {
   }
 }
 
+.about .main p {
+  max-width: 900px;
+}
+
 .data-container {
   max-width: $sitewidth;
   margin: 0 auto;
   width: auto;
   position: static;
   background-color: white;
-  padding: 35px 20px;
+  padding: 35px 20px  40px;
   @media screen and (min-width: $margin-bk-min) {
-    padding: 35px 35px 70px;
+    padding: 35px $widemargin 70px;
   }
   h2.page-title {
     padding: 0px 0;
@@ -190,10 +197,6 @@ a.info-icon {
   text-decoration: none;
   color: #333;
 }*/
-
-.item-link:hover .book-title {
-  text-decoration: underline;
-}
 
 .more-books a {
   display: none;
