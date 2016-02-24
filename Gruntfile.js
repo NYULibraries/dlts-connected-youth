@@ -22,12 +22,14 @@ module.exports = function ( grunt ) {
     /** configure task */
     if ( _.isFunction ( configuration[task] ) ) {
       taskConfiguration[task] = configuration[task]() ;
+      console.log("yes " + task);
     }
 
     /** load modules and task */
     grunt.loadNpmTasks ( gruntTask ) ;
 
   } ) ;
+
 
   /** init Grunt */
   grunt.initConfig ( taskConfiguration ) ;

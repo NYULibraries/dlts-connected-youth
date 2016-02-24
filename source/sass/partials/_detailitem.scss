@@ -27,13 +27,15 @@
     // margin-right: 10px;
     margin-top: 30px;
   }
-  .book-info > * {
-    margin-left: 20%;
-  }
-  .book-info .social {
-    float: left;
-    margin: 28px 33px 0 20%;
-    min-height: 60px;
+  .book-info {
+    > * {
+      margin-left: 20%;
+    }
+    .social {
+      float: left;
+      margin: 28px 33px 0 20%;
+      min-height: 60px;
+    }
   }
   .rights-info {
     padding-top: 2em;
