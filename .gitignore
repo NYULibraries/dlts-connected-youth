@@ -7,4 +7,7 @@ source/json/datasources/*
 # Emacs files
 *~
 
+# Jetbrains IDEs
+.idea/
+
 *.scssc
