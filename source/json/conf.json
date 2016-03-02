@@ -1,17 +1,17 @@
 {
-  "appName": "Connected Youth and Digital Futures",
+  "appName": "New York University Press",
   "collectionCode": "nyupress-epubs-site",
   "appUrl": "http://connectedyouth-dev.nyupress.org",
-  "appRoot": "/connectedyouth",
+  "appRoot": "",
   "discovery": "http://dev-discovery.dlib.nyu.edu:8080/solr3_discovery/nyupress",
-  "EnableGoogleAnalytics": false,
-
   "readiumCloneFromSource" : true,
-  "readiumUrl" : "http://connectedyouth-dev.nyupress.org/oabooks-reader/",
-  "readiumBooksDirectory" : "/epub_content",  
+  "readiumUrl" : "http://connectedyouth-dev.nyupress.org/oabooks-reader",
+  "readiumBooksDirectory" : "/content/dev/nyupress/epub_content",
   "readiumRepositoryURL" : "git@github.com:elgiovanno/readium-js-viewer.git",
-  "readiumDirectory" : "/www/sites",
+  "readiumDirectory" : "/www/sites/oabooks-reader",
   "readiumDirectoryName" : "readium-js-viewer",
-  "readiumRepositoryBranch" : "master"
-
+  "readiumRepositoryBranch" : "master",
+  "EnableGoogleAnalytics": true,
+  "GoogleAnalyticsUA" : "",
+  "GoogleAnalyticsDomain" : "nyupress.org"
 }
