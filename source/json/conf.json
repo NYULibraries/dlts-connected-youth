@@ -7,7 +7,7 @@
   "EnableGoogleAnalytics": false,
 
   "readiumCloneFromSource" : true,
-  "readiumUrl" : "http://openaccessbooks.nyupress.org/oabooks-reader/",
+  "readiumUrl" : "http://connectedyouth-dev.nyupress.org/oabooks-reader/",
   "readiumBooksDirectory" : "/epub_content",  
   "readiumRepositoryURL" : "git@github.com:elgiovanno/readium-js-viewer.git",
   "readiumDirectory" : "/www/sites",
