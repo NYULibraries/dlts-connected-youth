@@ -1,236 +1,207 @@
-.navbar header > * {
-  //padding: 10px 0 10px 0px;
-}
-
 .navbar-inner {
-  height: auto;
-  max-width: 1100px;
-  margin: 0 auto;
+    height: auto;
+    max-width: $sitewidth;
+    margin: 0 auto;
+    background-color: $nyupurple;
+    padding: 20px 35px 0;
 }
 
 .navbar {
-  min-height: 55px;
-  position: relative;
-  border: none;
-  border-radius: 0px;
-  margin-bottom: 20px;
-  margin-bottom: 0px;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  background-color: #3701A3;
-  #logo-replace {
-    padding: 20px 20px 20px $widemargin;
-    width: 245px;
-    height: 60px;
-    @media screen and (min-width: 871px) {
-      padding: 20px $widemargin;
-      width: 260px;
-      height: 60px;
-    }
-    overflow: hidden;
-    margin: 0;
-    a {
-      width: 190px;
-      height: 60px;
-      display: block;
-      text-indent: 3000%;
-      background-image: url("../images/nyucent.svg");
-      background-repeat: no-repeat;
-      background-size: auto 100%;
-      white-space: nowrap;
-    }
-  }
-  #site-title {
-    width: 100%;
-    a {
-      display: block;
-      // text-decoration: none;
-      // color: white;
-      width: 100%;
-      height: 50px;
-      height: 21px;
-      overflow: hidden;
-      text-indent: -3000px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: 0px 0px;
-      background-image: url("../images/cylogo2.svg");
-      font-size: 10px;
-    }
-    a:hover {
-      text-decoration: underline;
-      color: white;
-    }
-  }
-  a:link,
-  a:visited {
-    color: white;
-  }
-  a:focus,
-  a:hover {
-    text-decoration: underline;
-  }
-  .container {
-    // display: table;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0px;
-    padding-right: 0px;
-    @media screen and (min-width: 1100px) {
-      background-color: rgba(66, 0, 197, 0.51);
-    }
-  }
-  header {
-    display: table;
-    width: 95%;
-    max-width: 935px;
-  }
-  #logo-replace, .rhold {
-    display: table-cell;
-  }
-  header > * {
-    padding: 0;
-    @media screen and (min-width: 700px) {
-      padding: 20px 0 20px;
-      vertical-align: bottom;
-    }
-  }
-  .n-utils {
-    // display: table-cell;
-    // padding: 10px 10px 10px 0;
-    /* overriding bootstrap */
-    /*float: none !important;*/
-    // text-align: right;
- 
-  }
-  .n-utils a {
-    // white-space: nowrap;
-    /*text-transform: uppercase;*/
-    /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-    font: normal 200 13px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
-    color: #bbb;
-  }
-  .btn-default {
+    position: relative;
     border: none;
-    background-color: transparent;
-  }
-  .icon {
-    width: 40px;
-    height: 40px;
-    /* box-shadow: 1px 1px 5px rgb(0, 0, 0);*/
-  }
-  .icon:first-of-type {
-    margin-right: 5px;
-  }
+    border-radius: 0px;
+    margin-bottom: 20px;
+    margin-bottom: 0px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    background-color: shade($nyupurple, 10%);
+
+    .logos {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid shade($nyupurple, 25%);
+        padding-bottom: 15px;
+
+        h2 {
+            overflow: hidden;
+            margin: 0;
+
+            a {
+                display: block;
+                text-indent: -3000px;
+                background-image: url("../images/nyucent.svg");
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                height: 80px;
+            }
+        }
+
+        #logo-rep-clrn {
+            flex: 0 0 23%;
+
+            a {
+                background-image: url("../images/CLRN_white.svg");
+            }
+        }
+
+        #logo-rep-mac {
+            flex: 0 0 16%;
+
+            a {
+                background-image: url("../images/mac_white.svg");
+
+                //margin-left: 30%;
+                background-position: top right;
+            }
+        }
+
+        #logo-rep-nyup {
+            flex: 0 0 29%;
+
+            a {
+                background-image: url("../images/nyucent.svg");
+            }
+        }
+    }
+
+    .title-hold {
+        width: 100%;
+        border-top: 1px solid tint($nyupurple, 20%);
+        padding: 35px 0;
+    }
+
+    #site-title {
+        a {
+            display: block;
+            height: 20px;
+            overflow: hidden;
+            text-indent: -3000px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 0px 0px;
+            background-image: url("../images/cylogo2.svg");
+            font-size: 10px;
+        }
+    }
+
+    .container {
+        // display: table;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
-@media screen and (min-width: 1001px) {
-  // .home {
-  .navbar {
-    #logo-replace {
-      padding: 20px $widemargin;
-      a {
-        width: 237px;
-        height: 75px;
-        display: block;
-      }
+@media screen and (max-width: 800px) {
+    .navbar .logos h2 a {
+        height: 70px;
     }
-    #site-title a {
-      height: 26px;
-    }
-    // .rhold {
-    //   vertical-align: bottom;
-    // }
- 
-  }
-  // }
 }
 
 @media screen and (max-width: 700px) {
-  .navbar {
-    padding: 10px 0px;
-    .reader .icon-full-screen {
-      display: none;
+    .navbar .logos h2 a {
+        height: 60px;
     }
-    .reader #logo-replace,
-    .home & #logo-replace,
-    #logo-replace {
-      height: 40px;
-      width: 60px;
-      margin: 0 0px 0 0;
-      padding: 0;
+
+    #logo-rep-nyup {
+        a {
+            background-image: url("../images/nyup_m.svg");
+        }
     }
-    #logo-replace a {
-      height: 40px;
-      width: 40px;
-      background-position: left top;
-      background-size: auto 192%;
-    }
-    header {
-      margin: 0 $narrowmargin;
-    }
-    #site-title a {
-      background-position: 0px center;
-    }
-    .reader #site-title {
-      /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-      // font: normal 200 16px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B';
-      /* max-width: 15rem;*/
-    }
-    .n-utils {
-      float: none;
-      vertical-align: bottom;
-    }
-  }
 }
 
-@media screen and (max-width: 900px) and (min-width: 701px) {
-  // .navbar #site-title a {
-  //   background-image: url("../images/cylogo_vertical.svg");
-  // }
+@media screen and (max-width: 600px) {
+    .navbar .logos h2 a {
+        height: 50px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-  .navbar {
-    #site-title a {
-      height: 40px;
-      background-image: url("../images/cylogo_vertical.svg");
+    .navbar {
+        #site-title a {
+            height: 40px;
+            background-image: url("../images/cylogo_vertical.svg");
+        }
+
+        .title-hold {
+            vertical-align: middle;
+        }
     }
-    .rhold {
-      vertical-align: middle;
+
+    .navbar .logos {
+        flex-wrap: wrap;
+
+        //justify-content: center;
+
+        h2 {
+            flex: 0 0 35% !important;
+
+            a {
+                height: 50px;
+            }
+
+            &#logo-rep-nyup {
+                order: 3;
+                flex: 0 0 100% !important;
+                overflow: hidden;
+
+                a {
+                    background-repeat: no-repeat;
+                    background-size: 100% auto;
+                    height: 45px;
+                    width: 50%;
+                    margin-left: 25%;
+                    background-image: url("../images/nyup_m.svg");
+                }
+            }
+        }
     }
-  }
+
+    .logos {}
 }
 
-// @media screen and (max-width: 850px) {
-//   .home {
-//     .navbar {
-//       #site-title {
-//         /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B'
-//         font: normal 200 20px / 1 "Gotham 2r", "Gotham A", "Gotham B", $sans-fonts;
-//         padding-bottom: 10px;
-//       }
-//       #logo-replace {
-//         padding: 20px 0;
-//         a {
-//           // height: 75px;
-//           // width: 237px;
-//           // display: block;
+@media screen and (max-width: 700px) {
+    .navbar {
+        //padding: 10px 0px;
 
-//         }
-//       }
-//     }
-//   }
-// }
+        .reader .icon-full-screen {
+            display: none;
+        }
 
-@media screen and (max-width: 350px) {
-  .home .navbar #site-title,
-  .page .navbar #site-title,
-  .navbar .reader #site-title,
-  .navbar #site-title {
-    /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-    font: normal 200 14px / 1.1 $sans-fonts;
-  }
+        .reader #logo-rep-nyup,
+        .home & #logo-rep-nyup,
+        #logo-rep-nyup {
+            // height: 40px;
+            // width: 60px;
+            // margin: 0 0px 0 0;
+            // padding: 0;
+       
+        }
+
+        #logo-rep-nyup a {
+            // height: 40px;
+            // width: 40px;
+            // background-position: left top;
+            // background-size: auto 192%;
+       
+        }
+
+        header {
+            // margin: 0 $narrowmargin;
+       
+        }
+
+        #site-title a {
+            background-position: 0px center;
+        }
+
+        .reader #site-title {
+            /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
+            // font: normal 200 16px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B';
+            /* max-width: 15rem;*/
+        }
+    }
 }
