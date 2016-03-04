@@ -46,11 +46,12 @@
         }
 
         #logo-rep-mac {
-            flex: 0 0 23%;
+            flex: 0 0 16%;
 
             a {
                 background-image: url("../images/mac_white.svg");
-                margin-left: 30%;
+
+                //margin-left: 30%;
                 background-position: top right;
             }
         }
@@ -105,7 +106,7 @@
         height: 60px;
     }
 
-    &#logo-rep-nyup {
+    #logo-rep-nyup {
         a {
             background-image: url("../images/nyup_m.svg");
         }
