@@ -6,6 +6,31 @@
     padding: 20px 35px 0;
 }
 
+.book .navbar {
+    .logos h2 {
+        height: 40px;
+        flex: 0 0 20% !important;
+
+        a {
+            height: 40px;
+            background-size: contain;
+            background-position: center;
+        }
+
+        &#logo-rep-clrn {
+            a {
+                background-position: left center;
+            }
+        }
+
+        &#logo-rep-mac {
+            a {
+                background-position: right center;
+            }
+        }
+    }
+}
+
 .navbar {
     position: relative;
     border: none;
