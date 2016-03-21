@@ -13,7 +13,7 @@ module.exports = function ( grunt ) {
 
   // TODO: Need to get cloneReadium working again
   /** task to run */
-  var tasks = [ 'clean', 'copy', 'uglify', 'writeHTML', 'watch'] ;
+  var tasks = [ 'clean', 'copy', 'uglify', 'writeHTML'] ;
 
   _.each ( tasks , function ( task ) {
 
@@ -22,7 +22,7 @@ module.exports = function ( grunt ) {
     /** configure task */
     if ( _.isFunction ( configuration[task] ) ) {
       taskConfiguration[task] = configuration[task]() ;
-      console.log("yes " + task);
+     
     }
 
     /** load modules and task */

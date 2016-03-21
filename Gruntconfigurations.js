@@ -152,18 +152,7 @@ function htmlminify () {
 
 }
 
-function watch () {
 
-  var watchConfiguration = {
-      scripts: {
-        files: [ '**/*.js'],
-        tasks: ['jshint']
-      }
-    };
-      
-  return watchConfiguration ;
-
-}
 exports.copy = copy ;
 exports.clean = clean ;
 exports.uglify = uglify ;
@@ -171,5 +160,5 @@ exports.js = js ;
 exports.project = project ;
 exports.sass = sass ;
 exports.htmlminify = htmlminify ;
-exports.watch = watch ;
+
 exports.gitclone = gitclone ;

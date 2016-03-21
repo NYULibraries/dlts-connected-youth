@@ -9,7 +9,33 @@ YUI().use(
       container = Y.one('.library-items'),
       query = Y.one('.query'),
       loadMoreButton = Y.one('.pure-button.loading'),
-      datasourceURL = body.getAttribute('data-discovery') + '/select?&wt=json&json.wrf=callback={callback}&hl=true&hl.fl=title,description,text&fl=title,description,author,identifier,coverHref,thumbHref&rows=2&sort=description desc',
+
+      datasourceURL = body.getAttribute('data-discovery')                            +
+                        '/select?'                                                   +
+
+                        // Temporary hack for March 7, 2016 first draft version
+                        // Replace this with collection_code fielded search as soon
+                        // as possible.
+                        // See https://jira.nyu.edu/browse/NYUP-121
+                        'qf=identifier'                                              +
+                        '&'                                                          +
+                        'q=9781479824243+OR+9781479899982'                           +
+
+                        '&'                                                          +
+                        'wt=json'                                                    +
+                        '&'                                                          +
+                        'json.wrf=callback={callback}'                               +
+                        '&'                                                          +
+                        'hl=true'                                                    +
+                        '&'                                                          +
+                        'hl.fl=title,description,text'                               +
+                        '&'                                                          +
+                        'fl=title,description,author,identifier,coverHref,thumbHref' +
+                        '&'                                                          +
+                        'rows=2'                                                     +
+                        '&'                                                          +
+                        'sort=description desc',
+
       searchString = '*:*',
       transactions = [],
       pager = (Y.one('ul.pure-paginator') ? Y.one('ul.pure-paginator') : ""),
