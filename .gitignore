@@ -31,3 +31,5 @@ source/json/datasources/*
 # Laura had this.  Ask her about it later.
 
 *.scssc
+
+design/*
