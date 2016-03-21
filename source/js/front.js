@@ -19,7 +19,7 @@ YUI().use(
                         // See https://jira.nyu.edu/browse/NYUP-121
                         'qf=identifier'                                              +
                         '&'                                                          +
-                        'q=9781479829712+OR+9781479863570'                           +
+                        'q=9781479824243+OR+9781479899982'                           +
 
                         '&'                                                          +
                         'wt=json'                                                    +
