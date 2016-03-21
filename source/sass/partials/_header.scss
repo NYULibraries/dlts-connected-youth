@@ -1,232 +1,186 @@
 .navbar-inner {
-    height: auto;
-    max-width: $sitewidth;
-    margin: 0 auto;
-    background-color: $nyupurple;
-    padding: 20px 35px 0;
-}
+  height: auto;
+  max-width: $sitewidth;
+  margin: 0 auto;
+  background-color: $nyupurple;
+  padding: 20px 35px 0;
 
-.book .navbar {
-    .logos h2 {
-        height: 40px;
-        flex: 0 0 20% !important;
-
-        a {
-            height: 40px;
-            background-size: contain;
-            background-position: center;
-        }
-
-        &#logo-rep-clrn {
-            a {
-                background-position: left center;
-            }
-        }
-
-        &#logo-rep-mac {
-            a {
-                background-position: right center;
-            }
-        }
-    }
+  @media screen and (max-width: 700px) {
+    padding: 20px 20px 0;
+  }
 }
 
 .navbar {
-    position: relative;
-    border: none;
-    border-radius: 0px;
-    margin-bottom: 20px;
-    margin-bottom: 0px;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-    background-color: shade($nyupurple, 10%);
+  position: relative;
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  margin-bottom: 0px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  background-color: shade($nyupurple, 10%);
 
-    .logos {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 2px solid shade($nyupurple, 25%);
-        padding-bottom: 15px;
+  .logos {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid shade($nyupurple, 25%);
+    padding-bottom: 15px;
 
-        h2 {
-            overflow: hidden;
-            margin: 0;
+    h2 {
+      overflow: hidden;
+      margin: 0;
 
-            a {
-                display: block;
-                text-indent: -3000px;
-                background-image: url("../images/nyucent.svg");
-                background-repeat: no-repeat;
-                background-size: 100% auto;
-                height: 80px;
-            }
-        }
-
-        #logo-rep-clrn {
-            flex: 0 0 23%;
-
-            a {
-                background-image: url("../images/CLRN_white.svg");
-            }
-        }
-
-        #logo-rep-mac {
-            flex: 0 0 16%;
-
-            a {
-                background-image: url("../images/mac_white.svg");
-
-                //margin-left: 30%;
-                background-position: top right;
-            }
-        }
-
-        #logo-rep-nyup {
-            flex: 0 0 29%;
-
-            a {
-                background-image: url("../images/nyucent.svg");
-            }
-        }
+      a {
+        display: block;
+        text-indent: -3000px;
+        background-image: url("../images/nyucent.svg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 80px;
+      }
     }
 
-    .title-hold {
-        width: 100%;
-        border-top: 1px solid tint($nyupurple, 20%);
-        padding: 35px 0;
+    #logo-rep-clrn {
+      flex: 0 0 23%;
+
+      a {
+        background-image: url("../images/CLRN_white.svg");
+      }
     }
 
-    #site-title {
-        a {
-            display: block;
-            height: 20px;
-            overflow: hidden;
-            text-indent: -3000px;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: 0px 0px;
-            background-image: url("../images/cylogo2.svg");
-            font-size: 10px;
-        }
-    }
+    #logo-rep-mac {
+      flex: 0 0 16%;
 
-    .container {
-        // display: table;
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-}
+      a {
+        background-image: url("../images/mac_white.svg");
 
-@media screen and (max-width: 800px) {
-    .navbar .logos h2 a {
-        height: 70px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .navbar .logos h2 a {
-        height: 60px;
+        //margin-left: 30%;
+        background-position: top right;
+      }
     }
 
     #logo-rep-nyup {
-        a {
-            background-image: url("../images/nyup_m.svg");
-        }
+      flex: 0 0 29%;
+
+      a {
+        background-image: url("../images/nyucent.svg");
+      }
     }
+  }
+
+  .title-hold {
+    width: 100%;
+    border-top: 1px solid tint($nyupurple, 20%);
+    padding: 35px 0;
+  }
+
+  #site-title {
+    a {
+      display: block;
+      height: 20px;
+      overflow: hidden;
+      text-indent: -3000px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0px 0px;
+      background-image: url("../images/cylogo2.svg");
+      font-size: 10px;
+    }
+  }
+
+  .container {
+    // display: table;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
-@media screen and (max-width: 600px) {
-    .navbar .logos h2 a {
-        height: 50px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .navbar {
-        #site-title a {
-            height: 40px;
-            background-image: url("../images/cylogo_vertical.svg");
-        }
-
-        .title-hold {
-            vertical-align: middle;
-        }
-    }
-
-    .navbar .logos {
-        flex-wrap: wrap;
-
-        //justify-content: center;
-
-        h2 {
-            flex: 0 0 35% !important;
-
-            a {
-                height: 50px;
-            }
-
-            &#logo-rep-nyup {
-                order: 3;
-                flex: 0 0 100% !important;
-                overflow: hidden;
-
-                a {
-                    background-repeat: no-repeat;
-                    background-size: 100% auto;
-                    height: 45px;
-                    width: 50%;
-                    margin-left: 25%;
-                    background-image: url("../images/nyup_m.svg");
-                }
-            }
-        }
-    }
-
-    .logos {}
+@media screen and (max-width: 800px) {
+  .navbar .logos h2 a {
+    height: 70px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .navbar {
-        //padding: 10px 0px;
+  .navbar .logos h2 a {
+    height: 60px;
+  }
 
-        .reader .icon-full-screen {
-            display: none;
-        }
-
-        .reader #logo-rep-nyup,
-        .home & #logo-rep-nyup,
-        #logo-rep-nyup {
-            // height: 40px;
-            // width: 60px;
-            // margin: 0 0px 0 0;
-            // padding: 0;
-       
-        }
-
-        #logo-rep-nyup a {
-            // height: 40px;
-            // width: 40px;
-            // background-position: left top;
-            // background-size: auto 192%;
-       
-        }
-
-        header {
-            // margin: 0 $narrowmargin;
-       
-        }
-
-        #site-title a {
-            background-position: 0px center;
-        }
-
-        .reader #site-title {
-            /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-            // font: normal 200 16px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B';
-            /* max-width: 15rem;*/
-        }
+  #logo-rep-nyup {
+    a {
+      background-image: url("../images/nyup_m.svg");
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .logos h2 a {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    #site-title a {
+      height: 40px;
+      background-image: url("../images/cylogo_vertical.svg");
+    }
+
+    .title-hold {
+      vertical-align: middle;
+    }
+
+    .logos {
+      flex-wrap: wrap;
+      padding-bottom: 0;
+
+      //justify-content: center;
+
+      h2 {
+        //  flex: 0 0 35% !important;
+        flex: 0 0 35%;
+
+        a {
+          height: 50px;
+        }
+
+        &#logo-rep-nyup {
+          // order: 3;
+
+          //flex: 0 0 100% !important;
+          flex: 0 0 40%;
+
+          // overflow: hidden;
+
+          a {
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            height: 45px;
+
+            // width: 50%;
+            // margin-left: 25%;
+            background-image: url("../images/nyup_m.svg");
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    //padding: 10px 0px;
+
+    .reader .icon-full-screen {
+      display: none;
+    }
+
+    #site-title a {
+      background-position: 0px center;
+    }
+  }
 }
