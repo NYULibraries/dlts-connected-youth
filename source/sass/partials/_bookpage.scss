@@ -5,11 +5,6 @@
   }
 
   .navbar {
-    #site-title a {
-      // height: 30px;
-   
-    }
-
     .navbar-inner {
       max-width: none;
       padding: 0 35px;
@@ -75,6 +70,7 @@
 
             a {
               background-position: right center;
+              background-image: url("../images/mac2.svg");
             }
           }
         }
