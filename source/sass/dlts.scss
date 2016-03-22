@@ -3,8 +3,7 @@
  */
 $sans-fonts: Helvetica, Arial, sans-serif;
 
-// NYU Purple
-$darkblue: #57068c;
+// NYU Colors
 $nyupurple: #57068c;
 $widemargin: 35px;
 $narrowmargin: 20px;
@@ -45,7 +44,7 @@ h6 {
 
 a:link,
 a:visited {
-    color: $darkblue;
+    color: $nyupurple;
 }
 
 body.io-loading {
@@ -117,9 +116,6 @@ a.btn {
             font-size: 17px;
             margin: 30px 0 20px;
             padding-top: 20px;
-
-            //border-top: 1px solid rgba($darkblue, 0.2);
-       
         }
 
         .intro {
