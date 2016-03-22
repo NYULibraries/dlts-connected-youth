@@ -3,10 +3,7 @@
 require 'compass'
 
 
-# require 'toolkit'
-require 'modular-scale'
-#require 'compass-normalize'
-#require 'compass_formalize'
+
 require 'color-schemer'
 require 'respond-to'
 require 'breakpoint'
