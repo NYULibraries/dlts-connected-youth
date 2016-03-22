@@ -1,3 +1,7 @@
+body.book {
+  background-color: white;
+}
+
 .book {
   iframe {
     width: 100%;
@@ -70,7 +74,7 @@
 
             a {
               background-position: right center;
-              background-image: url("../images/mac2.svg");
+              margin-left: 0;
             }
           }
         }
