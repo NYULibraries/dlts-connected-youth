@@ -3,13 +3,10 @@
 require 'compass'
 
 
-# require 'toolkit'
-require 'modular-scale'
-#require 'compass-normalize'
-#require 'compass_formalize'
+
 require 'color-schemer'
-require 'respond-to'
-require 'breakpoint'
+#require 'respond-to'
+#require 'breakpoint'
 # Change this to :production when ready to deploy the CSS to the live server.
 environment = :development
 #environment = :production
