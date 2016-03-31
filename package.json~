@@ -1,7 +1,7 @@
 {
-  "name": "connectedyouth",
+  "name": "connected-youth",
   "version": "1.0.0",
-  "description": "connectedyouth",
+  "description": "connected-youth",
   "main": "Gruntfile.js",
   "devDependencies": {
     "dateformat": "^1.0.11",
