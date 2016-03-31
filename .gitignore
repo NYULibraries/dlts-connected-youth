@@ -14,6 +14,9 @@ source/json/js.json
 source/json/compass.json
 source/json/datasources/*
 
+# Ignore emacs backup files
+*~
+
 # Ignore Eclipse conf files
 .project
 .buildpath
