@@ -13,13 +13,11 @@ YUI().use(
       datasourceURL = body.getAttribute('data-discovery')                            +
                         '/select?'                                                   +
 
-                        // Temporary hack for March 7, 2016 first draft version
-                        // Replace this with collection_code fielded search as soon
-                        // as possible.
-                        // See https://jira.nyu.edu/browse/NYUP-121
-                        'qf=identifier'                                              +
+                        'qt=dismax'                                                  +
                         '&'                                                          +
-                        'q=9781479824243+OR+9781479899982'                           +
+                        'qf=collection_code'                                         +
+                        '&'                                                          +
+                        'q=connected-youth'                                          +
 
                         '&'                                                          +
                         'wt=json'                                                    +
