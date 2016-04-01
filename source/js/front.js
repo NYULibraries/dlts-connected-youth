@@ -28,9 +28,7 @@ YUI().use(
                         '&'                                                          +
                         'hl.fl=title,description,text'                               +
                         '&'                                                          +
-                        'fl=title,description,author,identifier,coverHref,thumbHref' +
-                        '&'                                                          +
-                        'rows=2',
+                        'fl=title,description,author,identifier,coverHref,thumbHref',
 
       searchString = '*:*',
       transactions = [],
