@@ -30,9 +30,7 @@ YUI().use(
                         '&'                                                          +
                         'fl=title,description,author,identifier,coverHref,thumbHref' +
                         '&'                                                          +
-                        'rows=2'                                                     +
-                        '&'                                                          +
-                        'sort=description desc',
+                        'rows=2',
 
       searchString = '*:*',
       transactions = [],
