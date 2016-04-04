@@ -11,7 +11,7 @@
   "readiumBooksDirectory" : "/Applications/MAMP/htdocs/epub_content",
   "readiumRepositoryURL" : "git@github.com:elgiovanno/readium-js-viewer.git",
   "readiumDirectory" : "/Applications/MAMP/htdocs/readium-js-viewer",
-  "readiumDirectoryName" : "readium-js-viewer",gba
+  "readiumDirectoryName" : "readium-js-viewer",
 
   "readiumRepositoryBranch" : "master",
 
