@@ -151,11 +151,11 @@
 }
 /* line 44, ../sass/partials/_header.scss */
 .navbar .logos #logo-rep-clrn {
-  flex: 0 0 23%;
+  flex: 0 0 17%;
 }
 /* line 47, ../sass/partials/_header.scss */
 .navbar .logos #logo-rep-clrn a {
-  background-image: url("../images/CLRN_white.svg");
+  background-image: url("../images/CL_logo_white.png");
 }
 /* line 52, ../sass/partials/_header.scss */
 .navbar .logos #logo-rep-mac {
@@ -775,7 +775,7 @@ a.btn {
 }
 /* line 154, ../sass/dlts.scss */
 .data-container.no-breadcrumb {
-  padding-top: 60px;
+  padding-top: 70px;
 }
 @media screen and (min-width: 701px) {
   /* line 146, ../sass/dlts.scss */
