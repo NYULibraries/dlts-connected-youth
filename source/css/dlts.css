@@ -76,26 +76,32 @@
 /* line 66, ../sass/partials/_libraryitem.scss */
 .library-item .book-title {
   font-weight: 400;
-  font-size: 2rem;
-  line-height: 1.35;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  padding-bottom: 5px;
 }
-/* line 71, ../sass/partials/_libraryitem.scss */
+/* line 72, ../sass/partials/_libraryitem.scss */
+.library-item .book-subtitle {
+  font-size: 1.3rem;
+  display: block;
+}
+/* line 77, ../sass/partials/_libraryitem.scss */
 .library-item a.details {
   margin-right: 30px;
   margin-top: 0;
 }
-/* line 75, ../sass/partials/_libraryitem.scss */
+/* line 81, ../sass/partials/_libraryitem.scss */
 .library-item .buttons a.btn {
   display: inline-block;
 }
-/* line 78, ../sass/partials/_libraryitem.scss */
+/* line 84, ../sass/partials/_libraryitem.scss */
 .library-item .author {
   margin-top: 0px;
-  padding: 0px 0 5px;
+  padding: 0px 0 15px;
   line-height: 1.25;
   /* #6FA64D*/
 }
-/* line 86, ../sass/partials/_libraryitem.scss */
+/* line 92, ../sass/partials/_libraryitem.scss */
 .library-item .description {
   font: normal 14px/1.4 Helvetica, Arial, sans-serif;
   color: #333;
@@ -339,10 +345,17 @@ input.searchbox:focus {
 }
 /* line 5, ../sass/partials/_detailitem.scss */
 .detail-item .book-title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 1.3;
+  padding-bottom: 5px;
 }
-/* line 9, ../sass/partials/_detailitem.scss */
+/* line 10, ../sass/partials/_detailitem.scss */
+.detail-item .book-subtitle {
+  font-size: 1.3rem;
+  line-height: 1.2;
+  display: block;
+}
+/* line 15, ../sass/partials/_detailitem.scss */
 .detail-item .img-hold {
   float: left;
   margin-right: 2%;
@@ -350,60 +363,61 @@ input.searchbox:focus {
   max-width: 160px;
   height: auto;
 }
-/* line 16, ../sass/partials/_detailitem.scss */
+/* line 22, ../sass/partials/_detailitem.scss */
 .detail-item .img-hold img {
   width: 100%;
   height: auto;
 }
-/* line 20, ../sass/partials/_detailitem.scss */
+/* line 26, ../sass/partials/_detailitem.scss */
 .detail-item .infolabel {
   color: #555;
 }
-/* line 25, ../sass/partials/_detailitem.scss */
+/* line 31, ../sass/partials/_detailitem.scss */
 .detail-item .buttons {
   text-align: right;
   margin-top: 30px;
 }
-/* line 31, ../sass/partials/_detailitem.scss */
+/* line 37, ../sass/partials/_detailitem.scss */
 .detail-item .book-info > * {
   margin-left: 20%;
 }
-/* line 34, ../sass/partials/_detailitem.scss */
+/* line 40, ../sass/partials/_detailitem.scss */
 .detail-item .book-info .social {
   float: left;
   margin: 28px 33px 0 20%;
   min-height: 60px;
 }
-/* line 40, ../sass/partials/_detailitem.scss */
+/* line 46, ../sass/partials/_detailitem.scss */
 .detail-item .rights-info {
-  padding-top: 2em;
-  font-size: 1.3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: .9rem;
   max-width: 70rem;
   clear: left;
 }
-/* line 46, ../sass/partials/_detailitem.scss */
+/* line 53, ../sass/partials/_detailitem.scss */
 .detail-item .rights-info img {
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 5px;
 }
-/* line 51, ../sass/partials/_detailitem.scss */
+/* line 58, ../sass/partials/_detailitem.scss */
 .detail-item .sharelabel {
   text-transform: uppercase;
   padding-bottom: 3px;
   color: #555;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* line 57, ../sass/partials/_detailitem.scss */
+/* line 64, ../sass/partials/_detailitem.scss */
 .detail-item .item-link {
   float: right;
   margin: 20px;
 }
-/* line 61, ../sass/partials/_detailitem.scss */
+/* line 68, ../sass/partials/_detailitem.scss */
 .detail-item #description {
   margin-top: 20px;
 }
-/* line 64, ../sass/partials/_detailitem.scss */
+/* line 71, ../sass/partials/_detailitem.scss */
 .detail-item p#book-description {
   margin: 0;
   padding: 0;
@@ -637,20 +651,26 @@ body.book {
   box-shadow: none;
 }
 
-/* line 23, ../sass/dlts.scss */
+/* line 22, ../sass/dlts.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 25, ../sass/dlts.scss */
 body {
   padding: 0;
   min-width: 300px;
+  font-size: 15px;
   font-family: Helvetica, Arial, sans-serif;
 }
 @media screen and (min-width: 950px) {
-  /* line 23, ../sass/dlts.scss */
+  /* line 25, ../sass/dlts.scss */
   body {
     background-color: #ececec;
   }
 }
 
-/* line 34, ../sass/dlts.scss */
+/* line 36, ../sass/dlts.scss */
 h1,
 h2,
 h3,
@@ -662,13 +682,13 @@ h6 {
   font-weight: normal;
 }
 
-/* line 45, ../sass/dlts.scss */
+/* line 47, ../sass/dlts.scss */
 a:link,
 a:visited {
   color: #57068c;
 }
 
-/* line 50, ../sass/dlts.scss */
+/* line 52, ../sass/dlts.scss */
 body.io-loading {
   background-position: center center;
   background-repeat: no-repeat;
@@ -681,12 +701,12 @@ body.io-loading {
     background-image: url(../images/ext_link_icon.svg);
     padding-right: 13px;
 }*/
-/* line 63, ../sass/dlts.scss */
+/* line 65, ../sass/dlts.scss */
 a.btn {
   color: #333;
 }
 
-/* line 67, ../sass/dlts.scss */
+/* line 69, ../sass/dlts.scss */
 #aboutlink {
   padding-right: 25px;
   height: 28px;
@@ -696,13 +716,13 @@ a.btn {
   padding-top: 14px;
 }
 
-/* line 76, ../sass/dlts.scss */
+/* line 78, ../sass/dlts.scss */
 #aboutlink:hover {
   background: url(../images/oa_logo_sprite.png) no-repeat right bottom;
 }
 
 /* overriding bootstrap */
-/* line 82, ../sass/dlts.scss */
+/* line 84, ../sass/dlts.scss */
 .breadcrumb {
   background-color: #ffffff;
   border-radius: 0px;
@@ -713,34 +733,34 @@ a.btn {
   max-width: 950px;
 }
 @media screen and (min-width: 701px) {
-  /* line 82, ../sass/dlts.scss */
+  /* line 84, ../sass/dlts.scss */
   .breadcrumb {
     padding: 8px 35px 6px;
   }
 }
 
-/* line 97, ../sass/dlts.scss */
+/* line 99, ../sass/dlts.scss */
 .sorter {
   text-align: right;
 }
-/* line 100, ../sass/dlts.scss */
+/* line 102, ../sass/dlts.scss */
 .sorter span {
   font-weight: bold;
 }
-/* line 104, ../sass/dlts.scss */
+/* line 106, ../sass/dlts.scss */
 .sorter a {
   color: #333;
   text-decoration: underline;
   font-weight: normal;
 }
 
-/* line 115, ../sass/dlts.scss */
+/* line 116, ../sass/dlts.scss */
 .home .data-container h2.page-title {
   font-size: 17px;
   margin: 30px 0 20px;
   padding-top: 20px;
 }
-/* line 121, ../sass/dlts.scss */
+/* line 122, ../sass/dlts.scss */
 .home .data-container .intro {
   /* Gotham  Screen Smart Light = font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';  */
   /* font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';*/
@@ -748,23 +768,22 @@ a.btn {
   font-style: normal;
   max-width: 900px;
 }
-/* line 129, ../sass/dlts.scss */
+/* line 130, ../sass/dlts.scss */
 .home .data-container .show-books {
   max-width: 900px;
   min-height: 400px;
 }
-/* line 134, ../sass/dlts.scss */
+/* line 135, ../sass/dlts.scss */
 .home .data-container p:first-child {
-  font-size: 1.3em;
-  /* margin: 35px 0 10px;*/
+  font-size: 1.1rem;
 }
 
-/* line 142, ../sass/dlts.scss */
+/* line 141, ../sass/dlts.scss */
 .about .main p {
   max-width: 900px;
 }
 
-/* line 146, ../sass/dlts.scss */
+/* line 145, ../sass/dlts.scss */
 .data-container {
   max-width: 950px;
   margin: 0 auto;
@@ -773,17 +792,17 @@ a.btn {
   background-color: white;
   padding: 35px 20px  40px;
 }
-/* line 154, ../sass/dlts.scss */
+/* line 153, ../sass/dlts.scss */
 .data-container.no-breadcrumb {
   padding-top: 70px;
 }
 @media screen and (min-width: 701px) {
-  /* line 146, ../sass/dlts.scss */
+  /* line 145, ../sass/dlts.scss */
   .data-container {
     padding: 35px 35px 70px;
   }
 }
-/* line 162, ../sass/dlts.scss */
+/* line 161, ../sass/dlts.scss */
 .data-container h2.page-title {
   padding: 0px 0;
   text-transform: uppercase;
@@ -798,23 +817,23 @@ a.btn {
   clear: both;
   float: none;
 }
-/* line 177, ../sass/dlts.scss */
+/* line 176, ../sass/dlts.scss */
 .data-container h2.page-title a:link, .data-container h2.page-title a:visited {
   color: #888888;
 }
 
-/* line 183, ../sass/dlts.scss */
+/* line 182, ../sass/dlts.scss */
 a.info-icon {
   display: none;
 }
 
-/* line 187, ../sass/dlts.scss */
+/* line 186, ../sass/dlts.scss */
 .buttons .btn-default {
   -webkit-transition: all 200ms;
   transition: all 200ms;
 }
 
-/* line 192, ../sass/dlts.scss */
+/* line 191, ../sass/dlts.scss */
 .buttons .btn-default:hover {
   background-color: #57068c;
   color: #fff;
@@ -823,7 +842,7 @@ a.info-icon {
   /* box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.3);*/
 }
 
-/* line 202, ../sass/dlts.scss */
+/* line 201, ../sass/dlts.scss */
 .no-cover-nyup {
   background-color: #61777D;
 }
@@ -837,29 +856,29 @@ a.info-icon {
   text-decoration: none;
   color: #333;
 }*/
-/* line 217, ../sass/dlts.scss */
+/* line 216, ../sass/dlts.scss */
 .more-books a {
   display: none;
 }
 
 @media screen and (max-width: 500px) {
-  /* line 222, ../sass/dlts.scss */
+  /* line 221, ../sass/dlts.scss */
   footer#pagefooter li#dlts-link:before {
     content: "";
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 228, ../sass/dlts.scss */
+  /* line 227, ../sass/dlts.scss */
   .library-items {
     margin: 1rem 0px 0px;
   }
 
-  /* line 232, ../sass/dlts.scss */
+  /* line 231, ../sass/dlts.scss */
   h2.page-title {
     margin: 0px;
   }
 
-  /* line 236, ../sass/dlts.scss */
+  /* line 235, ../sass/dlts.scss */
   #search-toggle,
   #search-toggle[style] {
     border: none;
@@ -876,33 +895,33 @@ a.info-icon {
     text-indent: -999em;
   }
 
-  /* line 252, ../sass/dlts.scss */
+  /* line 251, ../sass/dlts.scss */
   #search-toggle.open {
     text-indent: 0;
     background: none;
   }
 
-  /* line 257, ../sass/dlts.scss */
+  /* line 256, ../sass/dlts.scss */
   #search-toggle:focus {
     outline: none;
   }
 
-  /* line 261, ../sass/dlts.scss */
+  /* line 260, ../sass/dlts.scss */
   #search-toggle::-moz-focus-inner {
     border: 0;
   }
 
-  /* line 265, ../sass/dlts.scss */
+  /* line 264, ../sass/dlts.scss */
   .searchform {
     display: none;
   }
 
-  /* line 269, ../sass/dlts.scss */
+  /* line 268, ../sass/dlts.scss */
   .searchform.open {
     display: block;
   }
 
-  /* line 273, ../sass/dlts.scss */
+  /* line 272, ../sass/dlts.scss */
   .searchform input.searchbox {
     width: 100%;
     margin-top: 10px;
@@ -911,12 +930,12 @@ a.info-icon {
     font-size: 16px;
   }
 
-  /* line 282, ../sass/dlts.scss */
+  /* line 281, ../sass/dlts.scss */
   .buttons {
     margin: 2em 0 0;
   }
 
-  /* line 286, ../sass/dlts.scss */
+  /* line 285, ../sass/dlts.scss */
   .buttons a {
     margin: .5em 0;
   }
