@@ -19,11 +19,13 @@ $sitewidth: 950px;
 @import "partials/_detailitem";
 @import "partials/_footer";
 @import "partials/_bookpage";
-
+html {
+  font-size: 100%;
+}
 body {
   padding: 0;
   min-width: 300px;
-
+ font-size: 15px;
   @media screen and (min-width: $sitewidth) {
     background-color: #ececec;
   }
@@ -110,8 +112,7 @@ a.btn {
 
 .home {
   .data-container {
-    // padding-top: 20px;
-
+    
     h2.page-title {
       font-size: 17px;
       margin: 30px 0 20px;
@@ -132,9 +133,7 @@ a.btn {
     }
 
     p:first-child {
-      font-size: 1.3em;
-
-      /* margin: 35px 0 10px;*/
+      font-size: 1.1rem;
     }
   }
 }
