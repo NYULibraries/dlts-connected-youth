@@ -25,7 +25,7 @@ YUI().use(
                         '&'                                 +
                         'qf=collection_code'                +
                         '&'                                 +
-                        'q=oa-books'                        +
+                        'q=connected-youth'                 +
 
                         '&'                                 +
                         'wt=json'                           +
