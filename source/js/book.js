@@ -4,7 +4,7 @@ YUI().use( 'node' , function ( Y ) {
 
   var topOffsetHeight = Y.one('.header').get('offsetHeight') ;
   
-  var footerHeight = ( Y.one('footer').get('offsetHeight') + 5 ) ;
+  var footerHeight = ( Y.one('footer').get('offsetHeight') + 10 ) ;
   
   var viewport = Y.DOM.viewportRegion() ;
 
