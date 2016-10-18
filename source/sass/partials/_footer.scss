@@ -73,7 +73,7 @@ html {
 
 body.page {
   /* Margin bottom by footer height */
-  margin-bottom: 32px;
+ // margin-bottom: 32px;
 }
 
 body.page footer#pagefooter {
@@ -81,8 +81,6 @@ body.page footer#pagefooter {
   bottom: 0;
   width: 100%;
 
-  /* Set the fixed height of the footer here */
-  height: 32px;
 }
 
 @media screen and (max-width: 450px) {
@@ -90,8 +88,6 @@ body.page footer#pagefooter {
   footer#pagefooter li a:visited {
     margin-bottom: 1rem;
     margin: 0px;
-
-    /* padding: 11px 10px 7px;*/
   }
 
   footer#pagefooter li#dlts-link a:link,
@@ -99,10 +95,7 @@ body.page footer#pagefooter {
     padding-left: 0;
   }
 
-  footer#pagefooter li#dlts-link > span {
-    /* padding-left: 20px;*/
-  }
-
+ 
   .footer-inner {
     padding: 2px 0 5px;
   }
@@ -112,8 +105,4 @@ body.page footer#pagefooter {
     margin-bottom: 50px;
   }
 
-  body.page footer#pagefooter {
-    /* Set the fixed height of the footer here */
-    height: 50px;
-  }
 }

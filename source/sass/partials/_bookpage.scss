@@ -27,15 +27,17 @@ body.book {
         padding: 0;
         max-width: 500px;
         flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
         order: 1;
         border-top: none;
       }
 
       .logos {
         flex: 0 0 50%;
-
+        -ms-flex: 0 0 50%;
         @media screen and (min-width: 801px) {
           flex: 0 0 45%;
+          -ms-flex: 0 0 45%;
         }
 
         max-width: 400px;
@@ -46,6 +48,7 @@ body.book {
         h2 {
           // height: 40px;
           flex: 0 0 33.3%;
+          -ms-flex: 0 0 33.3%;
           font-size: 10px;
 
           a {
