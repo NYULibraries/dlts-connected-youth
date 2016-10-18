@@ -489,52 +489,45 @@ html {
 body.page {
   /* Margin bottom by footer height */
   margin-bottom: 32px;
+  overflow: hidden;
 }
 
-/* line 79, ../sass/partials/_footer.scss */
+/* line 80, ../sass/partials/_footer.scss */
 body.page footer#pagefooter {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 32px;
 }
 
 @media screen and (max-width: 450px) {
-  /* line 89, ../sass/partials/_footer.scss */
+  /* line 90, ../sass/partials/_footer.scss */
   footer#pagefooter li a:link,
   footer#pagefooter li a:visited {
     margin-bottom: 1rem;
     margin: 0px;
-    /* padding: 11px 10px 7px;*/
   }
 
-  /* line 97, ../sass/partials/_footer.scss */
+  /* line 96, ../sass/partials/_footer.scss */
   footer#pagefooter li#dlts-link a:link,
   footer#pagefooter li#dlts-link a:visited {
     padding-left: 0;
   }
 
   /* line 102, ../sass/partials/_footer.scss */
-  footer#pagefooter li#dlts-link > span {
-    /* padding-left: 20px;*/
-  }
-
-  /* line 106, ../sass/partials/_footer.scss */
   .footer-inner {
     padding: 2px 0 5px;
   }
 
-  /* line 110, ../sass/partials/_footer.scss */
+  /* line 106, ../sass/partials/_footer.scss */
   body.page {
     /* Margin bottom by footer height */
     margin-bottom: 50px;
   }
 
-  /* line 115, ../sass/partials/_footer.scss */
+  /* line 111, ../sass/partials/_footer.scss */
   body.page footer#pagefooter {
     /* Set the fixed height of the footer here */
-    height: 50px;
   }
 }
 /* line 1, ../sass/partials/_bookpage.scss */
@@ -547,104 +540,140 @@ body.book {
   width: 100%;
   border: none;
 }
-/* line 12, ../sass/partials/_bookpage.scss */
+/* line 11, ../sass/partials/_bookpage.scss */
 .book .navbar .navbar-inner {
   max-width: none;
   padding: 0 35px;
 }
 @media screen and (max-width: 700px) {
-  /* line 12, ../sass/partials/_bookpage.scss */
+  /* line 11, ../sass/partials/_bookpage.scss */
   .book .navbar .navbar-inner {
     padding: 0 20px;
   }
 }
-/* line 21, ../sass/partials/_bookpage.scss */
+/* line 18, ../sass/partials/_bookpage.scss */
 .book .navbar header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
-/* line 26, ../sass/partials/_bookpage.scss */
+/* line 31, ../sass/partials/_bookpage.scss */
 .book .navbar header .title-hold {
   padding: 0;
   max-width: 500px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
   order: 1;
   border-top: none;
 }
-/* line 34, ../sass/partials/_bookpage.scss */
+/* line 44, ../sass/partials/_bookpage.scss */
 .book .navbar header .logos {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 400px;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
   order: 2;
   border-bottom: none;
   padding-bottom: 0;
 }
 @media screen and (min-width: 801px) {
-  /* line 34, ../sass/partials/_bookpage.scss */
+  /* line 44, ../sass/partials/_bookpage.scss */
   .book .navbar header .logos {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 45%;
+    -ms-flex: 0 0 45%;
     flex: 0 0 45%;
   }
 }
-/* line 46, ../sass/partials/_bookpage.scss */
+/* line 62, ../sass/partials/_bookpage.scss */
 .book .navbar header .logos h2 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33.3%;
+  -ms-flex: 0 0 33.3%;
   flex: 0 0 33.3%;
   font-size: 10px;
 }
-/* line 51, ../sass/partials/_bookpage.scss */
+/* line 69, ../sass/partials/_bookpage.scss */
 .book .navbar header .logos h2 a {
   height: 50px;
 }
-/* line 55, ../sass/partials/_bookpage.scss */
+/* line 72, ../sass/partials/_bookpage.scss */
 .book .navbar header .logos h2#logo-rep-clrn {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 26%;
+  -ms-flex: 0 0 26%;
   flex: 0 0 26%;
 }
-/* line 58, ../sass/partials/_bookpage.scss */
+/* line 77, ../sass/partials/_bookpage.scss */
 .book .navbar header .logos h2#logo-rep-clrn a {
   background-position: left center;
 }
-/* line 63, ../sass/partials/_bookpage.scss */
+/* line 81, ../sass/partials/_bookpage.scss */
 .book .navbar header .logos h2#logo-rep-nyup {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 30%;
+  -ms-flex: 0 0 30%;
   flex: 0 0 30%;
 }
-/* line 66, ../sass/partials/_bookpage.scss */
+/* line 86, ../sass/partials/_bookpage.scss */
 .book .navbar header .logos h2#logo-rep-nyup a {
   background-position: center center;
   background-image: url("../images/nyup_m.svg");
 }
-/* line 72, ../sass/partials/_bookpage.scss */
+/* line 91, ../sass/partials/_bookpage.scss */
 .book .navbar header .logos h2#logo-rep-mac {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 16%;
+  -ms-flex: 0 0 16%;
   flex: 0 0 16%;
 }
-/* line 75, ../sass/partials/_bookpage.scss */
+/* line 96, ../sass/partials/_bookpage.scss */
 .book .navbar header .logos h2#logo-rep-mac a {
   background-position: right center;
   margin-left: 0;
 }
 @media screen and (max-width: 1100px) {
-  /* line 85, ../sass/partials/_bookpage.scss */
+  /* line 105, ../sass/partials/_bookpage.scss */
   .book .navbar header {
     padding-top: 10px;
     padding: 0;
   }
-  /* line 89, ../sass/partials/_bookpage.scss */
+  /* line 108, ../sass/partials/_bookpage.scss */
   .book .navbar header .title-hold {
     width: 30%;
   }
-  /* line 93, ../sass/partials/_bookpage.scss */
+  /* line 111, ../sass/partials/_bookpage.scss */
   .book .navbar header #site-title a {
     background-image: url("../images/cylogo_vertical.svg");
     height: 30px;
   }
 }
 @media screen and (min-width: 801px) {
-  /* line 102, ../sass/partials/_bookpage.scss */
+  /* line 119, ../sass/partials/_bookpage.scss */
   .book .navbar header .title-hold {
     width: 50%;
   }
 }
 
-/* line 110, ../sass/partials/_bookpage.scss */
+/* line 127, ../sass/partials/_bookpage.scss */
 .book-item .cover-image {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
