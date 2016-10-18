@@ -23,7 +23,9 @@
 
   .logos {
     display: flex;
+    display: -ms-flexbox;
     justify-content: space-between;
+    -ms-flex-pack: justify;
     border-bottom: 2px solid shade($nyupurple, 25%);
     padding-bottom: 15px;
 
@@ -43,7 +45,7 @@
 
     #logo-rep-clrn {
       flex: 0 0 17%;
-
+      -ms-flex: 0 0 17%;
       a {
         background-image: url("../images/CL_logo_white.png");
       }
@@ -51,7 +53,7 @@
 
     #logo-rep-mac {
       flex: 0 0 17%;
-
+      -ms-flex: 0 0 17%;
       a {
         background-image: url("../images/mac2.svg");
         margin-left: 30%;
@@ -61,7 +63,7 @@
 
     #logo-rep-nyup {
       flex: 0 0 29%;
-
+      -ms-flex:0 0 29%;
       a {
         background-image: url("../images/nyucent.svg");
       }
