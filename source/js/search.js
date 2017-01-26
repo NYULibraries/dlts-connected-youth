@@ -8,6 +8,7 @@ YUI().use(
   , 'jsonp'
   , 'jsonp-url'
   , 'gallery-idletimer'
+  , 'querystring-parse'
   , 'dlts-util'
   , function ( Y ) {
 
@@ -15,6 +16,7 @@ YUI().use(
 
     var body = Y.one('body')
       , container = Y.one('.library-items')
+      , docslength = parseInt(container.getAttribute("data-docslength"), 10)
       , query = Y.one('.query')
       , loadMoreButton = Y.one('.pure-button.loading')
       , totalFound = Y.one('.total-found')
@@ -52,7 +54,8 @@ YUI().use(
                             'author^2'                           +
                             '+'                                  +
                             'text'                               +
-
+                        '&'                                      +
+                        'rows=' + docslength                     +
                         '&'                                      +
                         'q='
       , searchString = '*:*'
@@ -61,7 +64,13 @@ YUI().use(
       , fold = 200
       , match = location.pathname.match(/\/search\/(.*)/)
       , source = Y.one('#list-template').getHTML()
-      , template = Y.Handlebars.compile(source);
+      , template = Y.Handlebars.compile(source)
+      , queryParams = Y.QueryString.parse( document.location.search.slice( 1 ) );
+
+    // Fix bug https://jira.nyu.edu/jira/browse/NYUP-214
+    if ( queryParams.searchbox ) {
+        document.location.href = queryParams.searchbox;
+    }
 
     Y.Handlebars.registerHelper('truncate', Y.DltsUtil.truncate);
     if ( ! Y.DltsUtil.truncate_page_path ) {
@@ -70,16 +79,6 @@ YUI().use(
             , page_path = root + '/details';
 
         Y.DltsUtil.truncate_page_path = page_path;
-    }
-
-    function onSubmit(e) {
-
-        e.preventDefault();
-
-        var currentTarget = e.currentTarget,
-        value = Y.one('.pure-input');
-
-        location.href = currentTarget.get('action') + '/' + value.get('value');
     }
 
     function onFailure() {}
@@ -182,7 +181,15 @@ YUI().use(
             })
         );
 
-        if (start + docslength === numfound) body.addClass('io-done');
+
+      if ( start + docslength === numfound ) {
+            container.append ("<div class='library-item empty-div'>&nbsp;</div>") ;
+            container.append ("<div class='library-item empty-div'>&nbsp;</div>") ;
+            container.append ("<div class='library-item empty-div'>&nbsp;</div>") ;
+            body.addClass('io-done') ;
+      }
+
+       
 
         body.removeClass('io-loading');
 
@@ -220,9 +227,7 @@ YUI().use(
     Y.jsonp(datasourceURL + searchString, { on: { success: onSuccess, failure: onFailure, timeout: onTimeout }, timeout: 3000 } ) ;
 
     loadMoreButton.on('click', onClick);
-    
-    body.delegate('submit', onSubmit, 'form');
-    
+
     pager.on('available', onPaginatorAvailable);
 
 } ) ;
