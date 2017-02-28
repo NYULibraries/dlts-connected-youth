@@ -1,5 +1,12 @@
-NYU Press ePubs: Connected Youth
-===================
+NYU Press ePubs: Connected Youth - ARCHIVED
+===========================================
+
+---
+
+This repo is superseded by [dlts-nyu-press-epub-sites](https://github.com/NYULibraries/dlts-nyu-press-epub-sites).
+See [NYUP-216](https://jira.nyu.edu/jira/browse/NYUP-216) for details.
+
+---
 
 A site for viewing and displaying epub books.
 
